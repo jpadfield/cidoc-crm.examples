@@ -1,0 +1,36 @@
+////////////////////////////////////////////////////////////////////////
+// Model: event // Primary relationships describing other events
+// D8.5 Figure 5
+////////////////////////////////////////////////////////////////////////
+
+_Blank Node	crm:P2.has type	crm:E9.Event	event@@crm
+_Blank Node	crm:P2.has type	Type PID	event@@oPID
+_Blank Node	crm:P126.employed	Material PID	event@@oPID
+Material PID	crm:P2.has type	crm:E57.Material
+_Blank Node	crm:P33.used specific technique	Method PID	event@@oPID
+Method PID	crm:P2.has type	crm:E55.Type
+_Blank Node	crm:P7.took place at	Location PID	event@@oPID
+Location PID	crm:P2.has type	crm:E53.Place
+_Blank Node	crm:P25.moved	Object PID	event@@oPID
+_Blank Node	crm:P31.modified	Object PID
+_Blank Node	crm:P34.concerned	Object PID
+Object PID	crm:P2.has type	crm:E22.Man-Made Object
+_Blank Node	rdfs:comment	Different events will have individual descriptions and different types of events will have different additional relationships or links to external resources@en
+
+_Blank Node	crm:P2.has type	crm:E39.Actor	aPID@@crm
+_Blank Node-1	crm.P14.carried out by	_Blank Node
+_Blank Node-1	crm.P12.occured in the presence of	_Blank Node
+_Blank Node-1	crm.P15.was influenced by	_Blank Node
+_Blank Node	rdfs:comment	An event in the life of an object can involve a range of people or groups in different roles@en
+
+_Blank Node	crm:P2.has type	crm:E31.Document
+_Blank Node-2	crm.P70.is documented in	_Blank Node
+_Blank Node	rdfs:comment	This allows a link to stand-alone and/or legacy reports, publications, databases, etc.@en
+
+_Blank Node	crm:P2.has type	crm:E1.CRM Entity
+_Blank Node-3	rdfs:seeAlso	_Blank Node
+_Blank Node	rdfs:comment	Different events can link to various other things.@en
+
+_Blank Node	crm:P2.has type	crm:E52.Time-span
+_Blank Node-4	crm:P4.has time span	_Blank Node
+_Blank Node	rdfs:comment	Time spans can be any period of time, with a start and a finish date Degrees of confidence also need to be established.@en
