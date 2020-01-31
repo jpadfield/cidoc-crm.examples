@@ -1,0 +1,81 @@
+////////////////////////////////////////////////////////////////////////
+// Model: object // Object Description
+// D8.5 Figure 2 
+////////////////////////////////////////////////////////////////////////
+
+ng:0FJS-0001-0000-0000	crm:P2.has type	crm:E22.Man-Made Object
+
+ng:0FJS-0001-0000-0000	crm:P46.forms part of	ngo:001-02VZ-0000
+ngo:001-02VZ-0000	crm:P2.has type	crm:E78.Curated Holding
+ngo:001-02VZ-0000	rdfs:label	The National Gallery Collection (London)@en
+
+ng:Event PID	crm:P2.has type	crm:E5.Event	ePID@@crm
+ng:0FJS-0001-0000-0000	crm:P12.was present at	ng:Event PID
+
+_Blank Node	crm:P2.has type	crm:E42.Identifier
+_Blank Node	crm:P2.has type	aat:300312355
+ng:0FJS-0001-0000-0000	crm:P48.has preferred identifier	_Blank Node
+_Blank Node	rdfs:label	NG1171@en
+aat:300312355	rdfs:label	accession numbers@en
+
+ngo:00C-02FT-0000	crm:P2.has type	crm:E35.Title
+ngo:00C-02FT-0000	crm:P2.has type	aat:300417208
+ngo:00C-02FT-0000	rdfs:label	The Ansidei Madonna@en
+ng:0FJS-0001-0000-0000	crm:P102.has title	ngo:00C-02FT-0000
+aat:300417208	rdfs:label	brief titles@en
+
+ngo:002-0432-0000	crm:P2.has type	crm:E12.Production	ePID@@crm
+ng:0FJS-0001-0000-0000	crm:P108.was produced by	ngo:002-0432-0000
+
+ng:0FJS-0001-0000-0000	rdfs:comment	Raphael painted this altarpiece for the Ansidei family chapel dedicated to Saint Nicholas in the Servite Church of S. Fiorenzo in Perugia. The date MDV (1505) is inscribed in gold on the ...@en
+ng:0FJS-0001-0000-0000	crm:P2.has type	aat:300033799
+aat:300033799	rdfs:label	oil paintings (visual works)@en
+ng:0FJS-0001-0000-0000	crm:P2.has type	aat:300234093
+aat:300234093	rdfs:label	religious visual works@en
+ng:0FJS-0001-0000-0000	crm:P2.has type	aat:300033656
+aat:300033656	rdfs:label	panel paintings (paintings by form)@en
+
+_Blank Node	crm:P2.has type	crm:E31.Document
+ng:0FJS-0001-0000-0000	crm:P70.is documented in	_Blank Node
+_Blank Node	owl:sameAs	https://cima.ng-london.org.uk/documentation/files/2009/10/01/Raphael%20Catalogue%20Complete.pdf
+_Blank Node	rdfs:seeAlso	https://www.book-info.com/isbn/1-85709-999-0.htm
+_Blank Node	rdfs:label	Raphael: From Urbino to Rome@en
+
+_Blank Node	crm:P2.has type	crm:E31.Document
+ng:0FJS-0001-0000-0000	crm:P70.is documented in	_Blank Node
+_Blank Node	note	This allows additional links to standalone and/or legacy reports, publications, databases, etc.@en
+
+_Blank Node	crm:P2.has type	crm:E54.Dimension
+_Blank Node	crm:P2.has type	aat:300055647
+ng:0FJS-0001-0000-0000	crm:P43.has dimension	_Blank Node
+_Blank Node	crm:P90.has value	147.6#xsd:float
+_Blank Node	crm:P91.has unit	aat:300379098
+
+_Blank Node	crm:P2.has type	crm:E54.Dimension
+_Blank Node	crm:P2.has type	aat:300055644
+ng:0FJS-0001-0000-0000	crm:P43.has dimension	_Blank Node
+_Blank Node	crm:P90.has value	216.8#xsd:float
+_Blank Node	crm:P91.has unit	aat:300379098
+
+aat:300055647	rdfs:label	width@en
+aat:300055644	rdfs:label	height@en
+aat:300379098	rdfs:label	centimeters@en
+
+_Blank Node	crm:P2.has type	crm:E57.Material
+_Blank Node	crm:P2.has type	aat:300163343
+ng:0FJS-0001-0000-0000	crm:P46.is composed of	_Blank Node
+_Blank Node	crm:P45.consists of	aat:300015050
+
+_Blank Node	crm:P2.has type	crm:E57.Material
+_Blank Node	crm:P2.has type	aat:300014844
+ng:0FJS-0001-0000-0000	crm:P46.is composed of	_Blank Node
+_Blank Node	crm:P45.consists of	aat:300012363
+
+aat:300163343	rdfs:label	media (artists' material)@en
+aat:300015050	rdfs:label	medium: oil paint (paint)@en
+aat:300014844	rdfs:label	supports (artists' materials)@en
+aat:300012363	rdfs:label	support: poplar (wood)@en
+
+_Blank Node	crm:P2.has type	crm:E1.CRM Entity
+ng:0FJS-0001-0000-0000	rdfs:seeAlso	_Blank Node
+_Blank Node	rdfs:comment	Different types of objects will have different additional properties and links to external resources.@en
