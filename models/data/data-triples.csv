@@ -1,0 +1,80 @@
+////////////////////////////////////////////////////////////////////////
+// Model: data // Capturing and Describing Analytical Data
+// D8.5 Figure 12
+////////////////////////////////////////////////////////////////////////
+
+ngi:NG1171­-OS8-­GC	crm:P2.has type	wd:Q1172284
+wd:Q1172284	rdfs:label	data set@en
+ngi:NG1171­-OS8-­GC	crm:P2.has type	wd:Q3192054
+wd:Q3192054	rdfs:label	chromatogram@en
+
+_Blank Node	crm:P2.has type	crm:E16.Measurement	event@@crm
+ngi:NG1171­-OS8-­GC	crm:P108.was produced by	_Blank Node
+
+_Blank Node	crm:P2.has type	crm:E54.Dimension
+_Blank Node	crm:P2.has type	wd:Q2199864
+ngi:NG1171­-OS8-­GC	crm:P43.has dimension	_Blank Node
+_Blank Node	crm:P90.has value	29.5#xsd:float
+_Blank Node	crm:P91.has unit	aat:300379240
+
+aat:300379240	rdfs:label	minutes (units for duration)@en
+wd:Q2199864	rdfs:label	duration@en
+
+ngi:NG1171­-OS8-­GC-IM01	crm:P2.has type	crm:E36.Visual Item
+ngi:NG1171­-OS8-­GC	crm:P138.has representation	ngi:NG1171­-OS8-­GC-IM01
+ngi:NG1171­-OS8-­GC-IM01	rdfs:comment	Generally, some form of graphical presentation as a standalone graph or part of a digital system@en
+
+ngi:NG1171­-OS8-­GC	crm:P106.is composed of	ngi:NG1171­-OS8-­GC-P01
+ngi:NG1171­-OS8-­GC-P01	crm:P2.has type	crm:E73.Informational Object
+ngi:NG1171­-OS8-­GC-P01	crm:P2.has type	ngo:00A-00E4-0000
+ngo:00A-00E4-0000	rdfs:label	Palmitate peak@en
+
+_Blank Node	crm:P2.has type	crm:E54.Dimension
+_Blank Node	crm:P2.has type	wd:Q2675808
+_Blank Node	crm:P2.has type	ngo:00A-00DW-0000
+ngi:NG1171­-OS8-­GC-P01	crm:P43.has dimension	_Blank Node
+_Blank Node	crm:P90.has value	11.1#xsd:float
+_Blank Node	crm:P91.has unit	aat:300379240
+
+_Blank Node	crm:P2.has type	crm:E54.Dimension
+_Blank Node-1	owl:sameAs	_Blank Node
+ngi:NG1171­-OS8-­GC-DP0001	crm:P43.has dimension	_Blank Node
+
+wd:Q2675808	rdfs:label	retention time@en
+
+ngi:NG1171­-OS8-­GC-P01	crm:P138.is composed of	ngi:NG1171­-OS8-­GC-C01
+ngi:NG1171­-OS8-­GC-C01	crm:P2.has type	crm:E73.Informational Object
+ngi:NG1171­-OS8-­GC-C01	crm:P2.has type	ngo:00A-00E1-0000
+ngo:00A-00E1-0000	rdfs:label	Mass spectral data@en
+
+_Blank Node	crm:P2.has type	crm:E54.Dimension
+_Blank Node	crm:P2.has type	ngo:00A-00E2-0000
+ngi:NG1171­-OS8-­GC-C01	crm:P43.has dimension	_Blank Node
+_Blank Node	crm:P90.has value	270#xsd:decimal
+_Blank Node	crm:P91.has unit	wd:Q874659
+
+_Blank Node	crm:P2.has type	crm:E57.Material
+_Blank Node	crm:P2.has type	wd:Q11173
+_Blank Node	crm:P45.consists of	wd:Q16676086
+ngi:NG1171­-OS8-­GC-C01	crm:P67.refers to	_Blank Node
+
+wd:Q16676086	rdfs:label	methyl palmitate@en
+wd:Q11173	rdfs:label	chemical compound@en
+wd:Q874659	rdfs:label	Mass-to-charge ratio@en
+ngo:00A-00E2-0000	rdfs:label	molecular ion mass@en
+
+ngi:NG1171­-OS8-­GC	crm:P106.is composed of	ngi:NG1171­-OS8-­GC-DP0001
+ngi:NG1171­-OS8-­GC-DP0001	crm:P2.has type	crm:E73.Informational Object
+ngi:NG1171­-OS8-­GC-DP0001	crm:P2.has type	wd:Q5227327
+wd:Q5227327	rdfs:label	data point@en
+ngo:00A-00DW-0000	rdfs:label	X Dimension@en
+ngo:00A-00DY-0000	rdfs:label	Y Dimension@en
+ngo:00A-00E3-0000	rdfs:label	Normalised ion count@en
+aat:300417377	rdfs:label	percentage@en
+
+_Blank Node	crm:P2.has type	crm:E54.Dimension
+_Blank Node	crm:P2.has type	ngo:00A-00E3-0000
+_Blank Node	crm:P2.has type	ngo:00A-00DY-0000
+ngi:NG1171­-OS8-­GC-DP0001	crm:P43.has dimension	_Blank Node
+_Blank Node	crm:P90.has value	100#xsd:decimal
+_Blank Node	crm:P91.has unit	aat:300417377
