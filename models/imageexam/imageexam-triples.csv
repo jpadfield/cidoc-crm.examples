@@ -1,0 +1,89 @@
+////////////////////////////////////////////////////////////////////////
+// Model: imageexam // Simple Image Examinations 
+// D8.5 Figure 7 & Figure 8
+////////////////////////////////////////////////////////////////////////
+
+_Blank Node	crm:P2.has type	crm:E16.Measurement	event@@crm
+_Blank Node	crm:P2.has type	aat:300379861
+_Blank Node	crm:P32.used general technique	aat:300419323
+_Blank Node	crm:P125.used object of type	wd:Q72367323
+_Blank Node	crm:P94.has created	ng:N-1171-00-000053
+_Blank Node	crm:P14.carried out by	ngo:00D-0002-0000	event@@aPID
+_Blank Node	crm:P39.measured	ng:0FJS-0001-0000-0000
+_Blank Node	crm:P70.is documented in	ngo:00D-0001-0000
+
+ng:0FJS-0001-0000-0000	crm:P2.has type	crm:E22.Man-Made Object
+ng:0FJS-0001-0000-0000	crm:P138.has representation	ng:N-1171-00-000055
+
+ngo:00D-0001-0000	crm:P2.has type	crm:E31.Document
+ngo:00D-0001-0000	rdfs:label	National Gallery Collection Image Database@en
+
+ngo:00D-0002-0000	crm:P2.has type	crm:E21.Person
+ngo:00D-0002-0000	crm:P2.has type	aat:300025687
+ngo:00D-0002-0000	rdfs:label	Example NG Staff Member@en
+aat:300025687	rdfs:label	photographers@en
+
+ng:N-1171-00-000053	crm:P2.has type	crm:E22.Man Made Object
+ng:N-1171-00-000053	crm:P2.has type	wd:Q72367323
+ng:N-1171-00-000053	crm:P65.shows visual item	ng:N-1171-00-000055
+ng:N-1171-00-000053	rdf:comment	Free Text N-1171-00-000053 description@en
+ng:N-1171-00-000053	crm:P70.is documented in	ngo:00D-0001-0000
+
+_Blank Node	crm:P2.has type	crm:E54.Dimension
+_Blank Node	crm:P2.has type	aat:300055647
+ng:N-1171-00-000053	crm:P43.has dimension	_Blank Node
+_Blank Node	crm:P90.has value	30#xsd:decimal
+_Blank Node	crm:P91.has unit	aat:300379098
+
+_Blank Node	crm:P2.has type	crm:E54.Dimension
+_Blank Node	crm:P2.has type	aat:300055644
+ng:N-1171-00-000053	crm:P43.has dimension	_Blank Node
+_Blank Node	crm:P90.has value	40#xsd:decimal
+_Blank Node	crm:P91.has unit	aat:300379098
+
+_Blank Node	crm:P2.has type	crm:E42.Identifier
+_Blank Node	crm:P2.has type	aat:300404621
+ng:N-1171-00-000053	crm:P131.is identified by	_Blank Node
+_Blank Node	rdfs:label	N-1171-00-000053@en
+
+_Blank Node	crm:P2.has type	crm:E42.Identifier
+_Blank Node	crm:P2.has type	aat:300404621
+ng:N-1171-00-000055	crm:P131.is identified by	_Blank Node
+_Blank Node	rdfs:label	N-1171-00-000055@en
+
+ng:N-1171-00-000055	crm:P2.has type	crm:E36.Visual Item
+ng:N-1171-00-000055	crm:P2.has type	aat:300419325
+ng:N-1171-00-000055	crm:P2.has type	aat:300215302
+ng:N-1171-00-000055	rdf:comment	Free Text N-1171-00-000055 description@en
+ng:N-1171-00-000055	crm:P138.represents	ng:0FJS-0001-0000-0000
+ng:N-1171-00-000055	crm:P70.is documented in	ngo:00D-0001-0000
+
+_Blank Node	crm:P2.has type	crm:E42.Identifier
+_Blank Node	crm:P2.has type	wd:Q1144928
+ng:N-1171-00-000055	crm:P131.is identified by	_Blank Node
+_Blank Node	rdfs:label	N-1171-00-000052.tif@en
+
+_Blank Node	crm:P2.has type	crm:E54.Dimension
+_Blank Node	crm:P2.has type	aat:300055647 
+ng:N-1171-00-000055	crm:P43.has dimension	_Blank Node
+_Blank Node	crm:P90.has value	19230#xsd:decimal
+_Blank Node	crm:P91.has unit	aat:300266190
+
+_Blank Node	crm:P2.has type	crm:E54.Dimension
+_Blank Node	crm:P2.has type	aat:300055644
+ng:N-1171-00-000055	crm:P43.has dimension	_Blank Node
+_Blank Node	crm:P90.has value	30275#xsd:decimal
+_Blank Node	crm:P91.has unit	aat:300266190
+
+aat:300266190	rdfs:label	pixels@en
+aat:300379098	rdfs:label	centimeters@en
+aat:300055647	rdfs:label	width@en
+aat:300055644	rdfs:label	height@en
+aat:300379861	rdfs:label	imaging (image making process)@en
+aat:300419323	rdfs:label	x-radiography@en
+aat:300404621	rdfs:label	repository number@en
+wd:Q1144928	rdfs:label	filename@en
+wd:Q72367323	rdfs:label	x-ray film@en
+aat:300215302	rdfs:label	digital images@en
+aat:300419325	rdfs:label	x-radiographs@en
+aat:300404202	rdfs:label	files (digital files)@en
