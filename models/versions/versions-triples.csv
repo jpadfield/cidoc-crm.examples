@@ -1,0 +1,31 @@
+////////////////////////////////////////////////////////////////////////
+// Model: versions // Versioning, processing or transforming data sets
+// D8.5 Figure 13
+////////////////////////////////////////////////////////////////////////
+
+Data Set 1.0 PID	crm:P2.has type	crm:E73.Informational Object	oPID@@crm
+
+_Blank Node	crm:P2.has type	crm:E54.Dimension
+_Blank Node	crm:P2.has type	wd:Q3331189
+Data Set 1.0 PID	crm:P43.has dimension	_Blank Node
+_Blank Node	crm:P90.has value	1.0#xsd:float
+
+_Blank Node	crm:P2.has type	crm:E81.Transformation	event@@crm
+_Blank Node	crm:P2.has type	aat:300380461
+_Blank Node	crm:P124:transformed	Data Set 1.0 PID
+_Blank Node	crm:P33.used specific technique	ngi:M0003
+_Blank Node	crm:P123.resulted in	Data Set 2.0 PID	thing@@oPID
+_Blank Node	rdfs:comment	A whole series of transformations can be modelled as shown, allowing for various calibration, format changes/conversions, processes etc.@en
+
+ngi:M0003	crm:P2.has type	crm:E29.Design or Procedure
+ngi:M0003	rdfs:label	Retention indices calibration@en
+aat:300380461	rdfs:label	calibration@en
+
+Data Set 2.0 PID	crm:P2.has type	crm:E73.Informational Object
+
+_Blank Node	crm:P2.has type	crm:E54.Dimension
+_Blank Node	crm:P2.has type	wd:Q3331189
+Data Set 2.0 PID	crm:P43.has dimension	_Blank Node
+_Blank Node	crm:P90.has value	2.0#xsd:float
+
+wd:Q3331189	rdfs:label	version, edition, or translation@en
