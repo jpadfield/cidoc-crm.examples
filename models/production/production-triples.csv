@@ -1,0 +1,57 @@
+////////////////////////////////////////////////////////////////////////
+// Model: production // Production of a Painting
+// D8.5 Figure 3
+////////////////////////////////////////////////////////////////////////
+
+ngo:002-0432-0000	crm:P2.has type	crm:E12.Production	ePID@@crm
+ngo:002-0432-0000	crm:P2.has type	aat:300404387
+aat:300404387	rdf:label	creating (artistic activity)@en
+ngo:002-0432-0000	rdfs:comment	Free Text@en
+ngo:002-0432-0000	crm:P108.has produced	ng:0FJS-0001-0000-0000
+ng:0FJS-0001-0000-0000	crm:P2.has type	crm:E22.Man-Made Object
+
+_Blank Node	crm:P2.has type	crm:E53.Place
+_Blank Node	owl:sameAs	tgn:7000526
+ngo:002-0432-0000	crm:P7.took place at	_Blank Node
+tgn:7000526	rdf:label	Perugia (inhabited place)@en
+
+_Blank Node	crm:P2.has type	crm:E55.type
+_Blank Node	crm:P2.has type	aat:300178684
+ngo:002-0432-0000	crm:P32.used general technique	_Blank Node
+aat:300178684	rdf:label	oil painting (technique)@en
+
+_Blank Node	crm:P2.has type	crm:E1.CRM Entity
+ngo:002-0432-0000	rdfs:seeAlso	_Blank Node
+_Blank Node	rdfs:comment	Further connections could be made to other related objects, people or events.@en
+
+_Blank Node	crm:P2.has type	crm:E57.Material
+_Blank Node	rdfs:sameAs	aat:300015050
+ngo:002-0432-0000	crm:P126.employed	_Blank Node
+aat:300015050	rdfs:label	oil paint (paint)@en
+
+_Blank Node	crm:P2.has type	crm:E74.Group
+_Blank Node	rdfs:sameAs	aat:300107304
+ngo:002-0432-0000	crm:P15.was influenced by	_Blank Node
+aat:300107304	rdfs:label	Ancient Italian@en
+
+ngo:002-0432-0000	crm:P14.carried out by	ng:0QCD-0001-0000-0000	ePID@@aPID
+ng:0QCD-0001-0000-0000	crm:P2.has type	crm:E21.Person
+
+_Blank Node	crm:P2.has type	crm:E31.Document
+ngo:002-0432-0000	crm:P70.is documented in	_Blank Node
+_Blank Node	note	This allows additional links to stand-alone and/or legacy reports, publications, databases, etc.@en
+
+_Blank Node	crm:P2.has type	crm:E31.Document
+_Blank Node	owl:sameAs	https://cima.ng-london.org.uk/documentation/files/2009/10/01/Raphael%20Catalogue%20Complete.pdf
+_Blank Node	rdfs:label	Raphael: From Urbino to Rome@en 
+_Blank Node	rdfs:seeAlso	https://www.book-info.com/isbn/1-85709-999-0.htm
+ngo:002-0432-0000	crm:P70.is documented in	_Blank Node
+
+_Blank Node	crm:P2.has type	crm:E52.Time-span
+_Blank Node	crm:P2.has type	aat:300379244
+_Blank Node	crm:P82a.begin of the begin	1505-01-01 #xsd:dateTime
+_Blank Node	crm:P82a.end of the end	1505-12-31 #xsd:dateTime
+_Blank Node	rdfs:label	1505@en 
+_Blank Node	owl:sameAs	wd:Q6153
+ngo:002-0432-0000	crm:P4.has time span	_Blank Node
+aat:300379244	rdfs:label	years@en 
