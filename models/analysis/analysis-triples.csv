@@ -1,0 +1,88 @@
+////////////////////////////////////////////////////////////////////////
+// Model: analysis // Describing Measurements and Analytical Examinations
+// D8.5 Figure 10
+////////////////////////////////////////////////////////////////////////
+
+_Blank Node	crm:P2.has type	crm:E16.Measurement	event@@crm
+_Blank Node	crm:P2.has type	aat:300081685
+_Blank Node	crm:P32.used general technique	aat:300223948
+_Blank Node	crm:P33.used specific technique	ngi:M0001
+_Blank Node	rdfs:comment	GC­MS analysis of OS8 a grey/white paint sample from the parapet behind the Virgin’s throne@en
+_Blank Node	crm:P70.is documented in	ngi:R000001
+_Blank Node	crm:P108.has produced	ngi:NG1171­-OS8-­GC
+_Blank Node	crm:P14.carried out by	ngo:00D-0002-0000	event@@aPID
+_Blank Node	crm:P39.measured	ngi:NG1171­-OS8
+
+ngi:NG1171­-OS8-­GC	crm:P2.has type	crm:E73.Informational Object
+ngi:NG1171­-OS8-­GC	crm:P2.has type	wd:Q1172284
+wd:Q1172284	rdfs:label	data set@en
+ngi:NG1171­-OS8-­GC	crm:P2.has type	wd:Q3192054
+wd:Q3192054	rdfs:label	chromatogram@en
+
+_Blank Node	crm:P2.has type	crm:E6.Destruction	event@@crm
+_Blank Node	crm:P13.destroyed	ngi:NG1171­-OS8
+_Blank Node-1	 owl:sameAs	_Blank Node
+
+_Blank Node	crm:P2.has type	crm:E54.Dimension
+_Blank Node-2	crm:P40.observed dimension	_Blank Node
+_Blank Node	owl:sameAs	ngi:NG1171­-OS8-­GC
+
+_Blank Node	crm:P2.has type	crm:E54.Dimension
+_Blank Node	crm:P2.has type	ngo:00A­-00E5-0000
+ngi:NG1171­-OS8-­GC	crm:P43.has dimension	_Blank Node
+_Blank Node	crm:P90.has value	2.9#xsd:float
+ngo:00A­-00E5-0000	rdfs:label	palmitate to stearate ratio@en
+
+_Blank Node	crm:P2.has type	crm:E13.Attribution Assignment	event@@crm
+_Blank Node	crm:P140.assigned attribute to	ngi:NG1171-OS8-MS
+_Blank Node	crm:P141.assigned	_Blank Node-1
+_Blank Node	crm:P16.used specific object	ngi:NG1171-OS8-MS
+
+_Blank Node	crm:P2.has type	crm:E54.Dimension
+_Blank Node	crm:P2.has type	ngo:00A-­00E6-­0000
+ngi:NG1171­-OS8-­GC	crm:P43.has dimension	_Blank Node
+_Blank Node	crm:P90.has value	2.2#xsd:float
+ngo:00A-­00E6-­0000	rdfs:label	azelate to palmitate ratio@en
+
+_Blank Node	crm:P2.has type	crm:E13.Attribution Assignment	event@@crm
+_Blank Node	crm:P140.assigned attribute to	ngi:NG1171-OS8-MS
+_Blank Node	crm:P141.assigned	_Blank Node-1
+_Blank Node	crm:P16.used specific object	ngi:NG1171-OS8-MS
+
+_Blank Node	crm:P2.has type	crm:E54.Dimension
+_Blank Node	crm:P2.has type	ngo:00A-­00E7-­0000
+ngi:NG1171­-OS8-­GC	crm:P43.has dimension	_Blank Node
+_Blank Node	crm:P90.has value	2.7#xsd:float
+ngo:00A-­00E7-­0000	rdfs:label	azelate to suberate ratio@en
+
+_Blank Node	crm:P2.has type	crm:E13.Attribution Assignment	event@@crm
+_Blank Node	crm:P140.assigned attribute to	ngi:NG1171-OS8-MS
+_Blank Node	crm:P141.assigned	_Blank Node-1
+_Blank Node	crm:P16.used specific object	ngi:NG1171-OS8-MS
+
+ngo:00D-0002-0000	crm:P2.has type	crm:E21.Person
+ngo:00D-0002-0000	crm:P2.has type	aat:300025820
+ngo:00D-0002-0000	rdfs:label	Example NG Staff Member@en
+
+aat:300025820	rdfs:label	conservation scientist@en
+
+ngi:R000001	crm:P2.has type	crm:E31.Document
+ngi:R000001	rdfs:label	Organic Report for NG1171@en
+
+ngi:M0001	rdfs:label	NG GC-MS Method 2009@en
+ngi:M0001	crm:P2.has type	crm:E29.Design or Procedure
+aat:300081685	rdfs:label	chemical analysis@en
+aat:300223948	rdfs:label	gas chromatography@en
+
+_Blank Node	crm:P2.has type	crm:E13.Attribution Assignment	event@@crm
+_Blank Node	crm:P140.assigned attribute to	ngi:NG1171-OS8
+_Blank Node	crm:P16.used specific object	ngi:NG1171-OS8-MS
+
+_Blank Node	crm:P2.has type	crm:E57.Material
+_Blank Node	crm:P2.has type	aat:300163343
+_Blank Node	crm:P45.consists of	aat:300014310
+_Blank Node-1	crm:P141.assigned	_Blank Node
+ngi:NG1171-OS8	crm:P46.is composed of	_Blank Node
+
+aat:300014310	rdfs:label	walnut oil@en
+aat:300163343	rdfs:label	media (artists' materials)@en
