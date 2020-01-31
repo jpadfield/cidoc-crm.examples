@@ -1,0 +1,85 @@
+////////////////////////////////////////////////////////////////////////
+// Model: sampling // Taking Samples
+// D8.5 Figure 6
+////////////////////////////////////////////////////////////////////////
+
+_Blank Node	crm:P2.has type	crm:E80.Part Removal	event@@crm
+_Blank Node	crm:P14.carried out by	ngo:00D-0002-0000	event@@aPID
+_Blank Node	crm:P113.removed	ngi:NG1171-IS31
+_Blank Node	crm:P7.took place at	ngi:N-1171-00-000052-S01
+_Blank Node	crm:P112.diminished	ng:0FJS-0001-0000-0000
+
+_Blank Node	crm:P2.has type	crm:E31.Document
+_Blank Node	crm:P2.has type	wd:Q1710397
+_Blank Node-1	crm:P70.is documented in	_Blank Node
+_Blank Node	rdfs:comment	Actual textual content detailing the reason or purpose of the annotation.@en
+
+_Blank Node	crm:P2.has type	crm:E52.Time-span
+_Blank Node	crm:P2.has type	wd:Q205892
+_Blank Node-2	crm:P4.has time span	_Blank Node
+_Blank Node	crm:P82a.begin of the begin	2001-02-13 00:00 #xsd:dateTime
+_Blank Node	crm:P82a.end of the end	2001-02-13 24:00 #xsd:dateTime
+_Blank Node	rdfs:label	2001-02-13@en
+
+ng:0FJS-0001-0000-0000	crm:P2.has type	crm:E22.Man-Made Object
+ng:0FJS-0001-0000-0000	crm:P59.has section	ngi:N-1171-00-000052-S01
+ng:0FJS-0001-0000-0000	crm:P138.has representation	ngi:N-1171-00-000052
+
+ngi:N-1171-00-000052	crm:P2.has type	crm:E36.Visual Item
+
+_Blank Node	crm:P2.has type	crm:E36.Visual Item
+_Blank Node	crm:P2.has type	ngo:00A-00E0-0000
+ngi:N-1171-00-000052	crm:P148.has component	_Blank Node
+ngi:N-1171-00-000052-S01	crm:P138.has representation	_Blank Node
+
+_Blank Node	crm:P2.has type	crm:E41.Appellation
+_Blank Node	crm:P2.has type	aat:300248475
+_Blank Node-1	crm:P1.is identified by	_Blank Node
+ngi:N-1171-00-000052-S01	crm:P1.is identified by	_Blank Node
+
+_Blank Node	crm:P2.has type	crm:E54.Dimension
+_Blank Node	crm:P2.has type	ngo:00A-00DW-0000
+_Blank Node-1	crm:P43.has dimension	_Blank Node
+_Blank Node	crm:P90.has value	170#xsd:decimal
+_Blank Node	crm:P91.has unit	aat:300266190
+
+_Blank Node	crm:P2.has type	crm:E54.Dimension
+_Blank Node	crm:P2.has type	ngo:00A-00DX-0000
+_Blank Node-2	crm:P43.has dimension	_Blank Node
+_Blank Node	crm:P90.has value	6239#xsd:decimal
+_Blank Node	crm:P91.has unit	aat:300266190
+
+_Blank Node	crm:P2.has type	crm:E31.Document
+_Blank Node	crm:P2.has type	aat:300026100
+_Blank Node-3	crm:P70.is documented in	_Blank Node
+_Blank Node	rdfs:comment	Actual html content of the annotation@en
+
+_Blank Node	crm:P2.has type	crm:E36.Visual Item
+ngi:N-1171-00-000052-S01	crm:P138.has representation	_Blank Node
+_Blank Node	rdfs:comment	Optional, additional images specifically representing the sample site.@en
+
+_Blank Node	crm:P2.has type	crm:E31.Document
+_Blank Node	crm:P2.has type	wd:Q1200750
+ngi:N-1171-00-000052-S01	crm:P70.is documented in	_Blank Node
+_Blank Node	rdfs:comment	Actual textual description of the annotation location.@en
+
+aat:300248475	rdfs:label	place@en
+wd:Q205892	rdfs:label	calendar date@en
+wd:Q1710397	rdfs:label	reason@en
+wd:Q1200750	rdfs:label	Description@en
+aat:300026100	rdfs:label	annotations@en
+aat:300266190	rdfs:label	pixels@en
+ngo:00A-00DW-0000	rdfs:label	X Dimension@en
+ngo:00A-00DX-0000	rdfs:label	Y Dimension@en
+ngo:00A-00E0-0000	rdfs:label	Area of interest@en
+ngi:N-1171-00-000052-S01	crm:P2.has type	crm:E53.place
+
+ngi:NG1171-IS31	rdfs:comment	Samples can then be fully defined like all generic objects@en
+ngi:NG1171-IS31	crm:P2.has type	crm:E22.Man-Made Object
+ngi:NG1171-IS31	crm:P2.has type	aat:300028875
+aat:300028875	rdfs:label	samples@en
+
+ngo:00D-0002-0000	crm:P2.has type	crm:E21.Person
+ngo:00D-0002-0000	crm:P2.has type	aat:300025820
+ngo:00D-0002-0000	rdfs:label	Example NG Staff Member@en
+aat:300025820	rdfs:label	conservation scientist@en
