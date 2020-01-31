@@ -1,0 +1,74 @@
+////////////////////////////////////////////////////////////////////////
+// Model: areaofinterest // Defining Areas of Interest and Image Annotation
+// D8.5 Figure 9
+////////////////////////////////////////////////////////////////////////
+
+_Blank Node	crm:P2.has type	crm:E9.Event	event@@crm
+_Blank Node	crm:P2.has type	ngo:00A-00DZ-0000
+ngo:00A-00DZ-0000	rdfs:label	Annotation (event)@en
+_Blank Node	crm:P14.carried out by	ngo:00D-0002-0000	event@@aPID
+_Blank Node	crm:P7.took place at	ngi:N-1171-00-000052-S02
+
+ngo:00D-0002-0000	crm:P2.has type	crm:E21.Person
+ngo:00D-0002-0000	crm:P2.has type	aat:300025820
+ngo:00D-0002-0000	rdfs:label	Example NG Staff Member@en
+aat:300025820	rdfs:label	conservation scientist@en
+
+_Blank Node	crm:P2.has type	crm:E31.Document
+_Blank Node-1	crm:P70.is documented in	_Blank Node
+_Blank Node	rdfs:comment	This can include the reason and purpose of the Area of Interest, as ext, images, video, etc..@en
+
+ng:0FJS-0001-0000-0000	crm:P2.has type	crm:E22.Man-Made Object
+ng:0FJS-0001-0000-0000	crm:P59.has section	ngi:N-1171-00-000052-S02
+
+ngi:N-1171-00-000052-S02	crm:P2.has type	crm:E53.Place
+ngi:N-1171-00-000052-S02	crm:P2.has type	ngo:00A-00E0-0000
+ngi:N-1171-00-000052-S02	rdfs:comment	Free text description of the Area of Interest@en
+
+_Blank Node	crm:P2.has type	crm:E31.Document
+ngi:N-1171-00-000052-S02	crm:P70.is documented in	_Blank Node
+_Blank Node	note	This allows additional links to stand-alone and/or legacy reports, publications, databases, etc.@en
+
+_Blank Node	crm:P2.has type	crm:E41.Appellation
+_Blank Node	crm:P2.has type	aat:300248475
+_Blank Node-1	crm:P1.is identified by	_Blank Node
+ngi:N-1171-00-000052-S02	crm:P1.is identified by	_Blank Node
+
+_Blank Node	crm:P2.has type	crm:E31.Document
+_Blank Node	crm:P2.has type	aat:300026100
+_Blank Node-1	crm:P70.is documented in	_Blank Node
+_Blank Node	rdfs:comment	Actual html content of the annotation@en
+
+_Blank Node	crm:P2.has type	crm:E54.Dimension
+_Blank Node	crm:P2.has type	ngo:00A-00DW-0000
+_Blank Node-2	crm:P43.has dimension	_Blank Node
+_Blank Node	crm:P90.has value	170#xsd:decimal
+_Blank Node	crm:P91.has unit	aat:300266190
+
+_Blank Node	crm:P2.has type	crm:E54.Dimension
+_Blank Node	crm:P2.has type	ngo:00A-00DX-0000
+_Blank Node-3	crm:P43.has dimension	_Blank Node
+_Blank Node	crm:P90.has value	6239#xsd:decimal
+_Blank Node	crm:P91.has unit	aat:300266190
+
+_Blank Node	crm:P2.has type	crm:E54.Dimension
+_Blank Node	crm:P2.has type	aat:300055647
+_Blank Node-4	crm:P43.has dimension	_Blank Node
+_Blank Node	crm:P90.has value	200#xsd:decimal
+_Blank Node	crm:P91.has unit	aat:300266190
+
+_Blank Node	crm:P2.has type	crm:E54.Dimension
+_Blank Node	crm:P2.has type	aat:300055644
+_Blank Node-5	crm:P43.has dimension	_Blank Node
+_Blank Node	crm:P90.has value	200#xsd:decimal
+_Blank Node	crm:P91.has unit	aat:300266190
+
+
+aat:300248475	rdfs:label	place@en
+aat:300026100	rdfs:label	annotations@en
+ngo:00A-00E0-0000	rdfs:label	Area of Interest@en
+aat:300055647	rdfs:label	width@en
+aat:300055644	rdfs:label	height@en
+ngo:00A-00DW-0000	rdfs:label	X Dimension@en
+ngo:00A-00DX-0000	rdfs:label	Y Dimension@en
+aat:300266190	rdfs:label	pixels@en
