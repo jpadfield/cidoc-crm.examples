@@ -1,0 +1,25 @@
+////////////////////////////////////////////////////////////////////////
+// Model: number // Capturing and Describing Simple Numerical Values
+// D8.5 Figure 11
+////////////////////////////////////////////////////////////////////////
+
+_Blank Node	crm:P2.has type	crm:E16.Measurement	event@@crm
+_Blank Node	crm:P2.has type	aat:300053578
+_Blank Node	crm:P16.used specific object	aat:300204852
+_Blank Node	crm:P33.used specific technique	ngi:M0002
+_Blank Node	crm:P32.used general technique	wd:Q3485549
+
+_Blank Node	crm:P2.has type	crm:E54.Dimension
+_Blank Node	crm:P2.has type	aat:300055647
+_Blank Node-1	crm:P40.observed dimension	_Blank Node
+ng:0FJS-0001-0000-0000	crm:P43.has dimension	_Blank Node
+_Blank Node	crm:P90.has value	216.8#xsd:float
+_Blank Node	crm:P91.has unit	aat:300379098
+
+ngi:M0002	rdfs:label	NG Painting measurement method@en
+ngi:M0002	crm:P2.has type	crm:E29.Design or Procedure
+wd:Q3485549	rdfs:label	manual work@en
+aat:300204852	rdfs:label	tape measure@en
+aat:300053578	rdfs:label	measuring@en
+aat:300055647	rdfs:label	width@en
+aat:300379098	rdfs:label	centimeters@en
