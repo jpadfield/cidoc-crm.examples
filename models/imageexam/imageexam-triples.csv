@@ -7,7 +7,7 @@ _Blank Node	crm:P2.has type	crm:E16.Measurement	event@@crm
 _Blank Node	crm:P2.has type	aat:300379861
 _Blank Node	crm:P32.used general technique	aat:300419323
 _Blank Node	crm:P125.used object of type	wd:Q72367323
-_Blank Node	crm:P94.has created	ng:N-1171-00-000053
+_Blank Node	crm:P108.has produced	ng:N-1171-00-000053
 _Blank Node	crm:P14.carried out by	ngo:00D-0002-0000	event@@aPID
 _Blank Node	crm:P39.measured	ng:0FJS-0001-0000-0000
 _Blank Node	crm:P70.is documented in	ngo:00D-0001-0000
