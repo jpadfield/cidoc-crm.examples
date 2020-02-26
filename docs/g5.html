@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,6 +11,7 @@
     <title>NG Example CRM Modelling</title>
     
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<!--<link href="css/offcanvas.css" rel="stylesheet" type="text/css">-->
 	<link href="css/jquery.json-viewer.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
@@ -25,13 +27,13 @@
 				style="" alt="The National Gallery"/>
 		  </a>
 						<div class="collapse navbar-collapse" id="navbarsExampleDefault">
-     <ul class="navbar-nav">
+        <ul class="navbar-nav">
 					<li class="nav-item active">
 						<a class="nav-link" href="">Home</a></li>
 					<li class="nav-item">
-						<a class="nav-link" href="mods.html">Models</a></li>
+						<a class="nav-link" href="mods.html">Models <span class="sr-only">(current)</span></a></li>
 					<li class="nav-item">
-						<a class="nav-link" href="data.html">Data<span class="sr-only">(current)</span></a></li>
+						<a class="nav-link" href="data.html">Data</a></li>
 					<li class="nav-item">
 						<a class="nav-link" href="about.html">About</a></li></ul>
                 
@@ -51,61 +53,59 @@
 			<div class="row ">
 			 <div class="col-12 col-md-12">          
 				
-				<div class="jumbotron"><h2>National Gallery - CIDOC CRM Modelling Examples</h2></div>
+				<div class="jumbotron"><h2>Describing Measurements and Analytical Examinations</h2></div>
 				
 				<!-- PAGE CONTENT -->
-				
-				<div class="row"><div class="col-6 col-lg-6"><h2>Data preparation</h2>
-<p>This site has been setup to present a series of examples of how the CIDOC CRM can be used to model actual heritage data, however it is not meant to be a static resource. The models that are presented here are expected to change overtime as a result of further research and discussion and potentially new models may be added. The goal is to create a resource that aims to present a <i>current</i> view of the consensus of how the CIDOC CRM is used to model data in practical systems.</p>
-
-<p>In order to make the process of editing the models as easy as possible they are created dynamically from a simple list of tab separated triples as shown here. Simple changes to this root data file will result in the presented models changing, as all of the required processing and formatting, for these complex presentations, are carried out automatically each time a model is loaded.</p>
-
-<p>In order to allow others to participate in future discussions, and help update these models, the raw files are going to be uploaded to <a href="https://github.com/jpadfield/cidoc-crm.examples">GitHub</a>. This will allow details of all issues, comments and even older versions of the models to be publicly organised and presented.</p>
-<center><a href="https://github.com/jpadfield/cidoc-crm.examples"><img style="position:relative;width:150px;" src="https://research.ng-london.org.uk/ng/graphics/github logo.png"/></a></center>
-</div><!--/span--><div class="col-6 col-lg-6"><pre style="overflow: hidden;border: 2px solid black;padding: 10px;">
-////////////////////////////////////////////////////////////////////////
-// Model: artist // Primary relationships describing an Artist
-// D8.5 Figure 4
-////////////////////////////////////////////////////////////////////////
-ng:0F6J-0001-0000-0000	crm:P2.has type	crm:E21.Person	aPID@@crm
-ng:0F6J-0001-0000-0000	crm:P2.has type	aat:300411314
-aat:300411314	rdfs:label	artist painters@en
-ng:0F6J-0001-0000-0000	crm:P2.has type	aat:300024987
-aat:300024987	rdfs:label	architechts@en
-ng:0F6J-0001-0000-0000	owl:sameAs	ulan:500023578
-ulan:500023578	rdfs:label	Raphael@en
-ng:0F6J-0001-0000-0000	owl:sameAs	wd:Q5597
-wd:Q5597	rdfs:label	Raphael@en
-ng:0F6J-0001-0000-0000	rdfs:seeAlso	https://cima.ng-london.org.uk/documentation
-https://cima.ng-london.org.uk/documentation	rdfs:label	Raphael Research Resource@en
-ng:0F6J-0001-0000-0000	rdfs:comment	Free Text@en
-ng:0F6J-0001-0000-0000	crm:P14.performed	ngo:002-0432-0000	aPID@@ePID
-
-_Blank Node	crm:P2.has type	crm:E41.Appellation
-ng:0F6J-0001-0000-0000	crm:P131.is identified by	_Blank Node
-_Blank Node	rdfs:label	Raphael@en
-
-_Blank Node	crm:P2.has type	crm:E74.Group	aPID@@crm
-ng:0F6J-0001-0000-0000	crm:P15.was influenced by	_Blank Node
-_Blank Node	owl:sameAs	aat:300107304
-aat:300107304	rdfs:label	Ancient Italian@en
-
-_Blank Node	crm:P2.has type	crm:E67 Birth	event@@crm
-ng:0F6J-0001-0000-0000	crm:P98.was born	_Blank Node
-
-_Blank Node	crm:P2.has type	crm:E53 Place
-_Blank Node-1	crm:P7.took place at	_Blank Node
-_Blank Node	owl:sameAs	tgn:7003994
-_Blank Node	owl:sameAs	wd:Q2759
-tgn:7003994	rdfs:label	Urbino (inhabited place)@en
-</pre></div><!--/span--></div><!--/row-->    <br/>
+								
+div class="row"><div class="col-12 col-lg-12">Conservation or Heritage science makes use of a wide range of analytical processes to examine,
+measure, and identify objects and the materials that they are composed of. The data gathered can
+range from a simple number to a complex multi-dimensional data array or images and spectra. In
+this section the generic relationships and events involved in all these processes have been broken
+down into stages, represented by a few specific examples. For more complex forms of analysis
+several of these stages would need to be joined together and, in some cases, this would need to be
+done several times. In the schematic diagrams shown in this section the term <b>Dimension</b> has been
+used to cover all types of single or groups of measured values, from simple widths and heights to
+more complex spectra and 3D data cubes. In addition, to allow the definition of further relationships
+the CIDOC CRM term <b>Information Object</b> has also been used to represent <b>data sets</b> as a whole.</div><!--/span--><div class="col-12 col-lg-12"><table width="100%">				<tr>
+					<td><h4>Describing Measurements and Analytical Examinations (67 - triples)</h4></td>
+					<td style="text-align:right;white-space: nowrap;">
+						<div class="btn-group" role="group" aria-label="Basic example">
+						<a class="btn btn-outline-primary" href="?dataset=analysis" role="button">D3 Model</a>
+						<a class="btn btn-outline-success" href="?dataset=analysis&mermaid=1" role="button">Mermaid Model</a>
+						</div
+					</td>
+				</tr>				<tr>
+					<td><h4>Capturing and Describing Simple Numerical Values (18 - triples)</h4></td>
+					<td style="text-align:right;white-space: nowrap;">
+						<div class="btn-group" role="group" aria-label="Basic example">
+						<a class="btn btn-outline-primary" href="?dataset=number" role="button">D3 Model</a>
+						<a class="btn btn-outline-success" href="?dataset=number&mermaid=1" role="button">Mermaid Model</a>
+						</div
+					</td>
+				</tr>				<tr>
+					<td><h4>Capturing and Describing Analytical Data (61 - triples)</h4></td>
+					<td style="text-align:right;white-space: nowrap;">
+						<div class="btn-group" role="group" aria-label="Basic example">
+						<a class="btn btn-outline-primary" href="?dataset=data" role="button">D3 Model</a>
+						<a class="btn btn-outline-success" href="?dataset=data&mermaid=1" role="button">Mermaid Model</a>
+						</div
+					</td>
+				</tr>				<tr>
+					<td><h4>Versioning, processing or transforming data sets (20 - triples)</h4></td>
+					<td style="text-align:right;white-space: nowrap;">
+						<div class="btn-group" role="group" aria-label="Basic example">
+						<a class="btn btn-outline-primary" href="?dataset=versions" role="button">D3 Model</a>
+						<a class="btn btn-outline-success" href="?dataset=versions&mermaid=1" role="button">Mermaid Model</a>
+						</div
+					</td>
+				</tr></table></br></div><!--/span--></div><!--/row-->    <br/>
 			</div><!--/span-->
 			
 			
 			</div><!--/row-->
-			
+
 <!-- PAGE CONTENT END-->
-							
+			
 			  <footer>
 		<div class="container-fluid">
 			<div class="row">
@@ -127,6 +127,8 @@ tgn:7003994	rdfs:label	Urbino (inhabited place)@en
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/tether.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<!-- <script src="js/ie10-viewport-bug-workaround.js"></script>
+	<script src="js/offcanvas.js"></script> -->
 	<script src="js/jquery.json-viewer.js"></script>
 
   </body>
