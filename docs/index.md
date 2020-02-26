@@ -1,62 +1,77 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+---
+layout: default
+title: CIDOC CRM Modelling Examples
+description: Worked examples
+keywords: CIDOC CRM, modelling, semantics, heritage science, open source, linked data, LOD
+url: https://rdf.ng-london.org.uk/modelling
+custom_css: index.css
+custom_js: index.js
+---
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+<!-- Header -->
 
-{% seo %}
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          {% if site.github.is_project_page %}
-            <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
-          {% endif %}
-
-          <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
-          <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-
-          {% if site.show_downloads %}
-            <section id="downloads">
-              <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
-            </section>
-          {% endif %}
-        </header>
+<div class="header home-header">
+    <div class="Grid container">
+        <div id="header-text" class="Grid-cell u-size7of8">
+            <h1 class="subheading">
+                <a href="https://twitter.com/TwitterOSS" target="_blank">@TwitterOSS</a>
+            </h1>
+            <h1 class="large-title">Open Source is Happening</h1>
+        </div>
     </div>
+</div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        {{ content }}
-      </section>
+<!-- #OurPhilosophy -->
+
+<div class="section grey">
+    <div class="Grid container">
+        <div id="philosophy-text" class="Grid-cell u-size4of6 u-before1of6 u-after1of6">
+            <h1 class="small-title center-text mega-margin">#OurPhilosophy</h1>
+            <p class="center-text mega-margin">For anything to grow, you need three things:</p>
+        </div>
     </div>
+    <div class="Grid small-container">
+        <div class="Grid-cell u-size1of3 emoji-card">
+            <img src="assets/fire.png" alt="Fire emoji" class="emoji-img center-margin large-margin">
+            <h1 class="center-text medium-margin">Heat</h1>
+            <p class="center-text">Heat means work.<br/>Upstream contributions, bug fixes, designs, docs--the rigorous work that drives the community.</p>
+        </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        {% if site.github.is_project_page %}
-        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
+        <div class="Grid-cell u-size1of3 emoji-card">
+            <img src="assets/sun.png" alt="Sun emoji" class="emoji-img center-margin large-margin">
+            <h1 class="center-text medium-margin">Light</h1>
+            <p class="center-text">Light means visibility. <br/>For the projects, contributions, opportunities, challenges, and people that impact the community.</p>
+        </div>
+
+        <div class="Grid-cell u-size1of3 emoji-card">
+            <img src="assets/pride.png" alt="Pride heart emoji" class="emoji-img center-margin large-margin">
+            <h1 class="center-text medium-margin">Love</h1>
+            <p class="center-text">Love means culture and support.<br/>Why we care. How we work. Actions that grow the community.</p>
+        </div>
+
     </div>
+</div>
 
-    {% if site.google_analytics %}
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
-      </script>
-    {% endif %}
-  </body>
-</html>
+<!-- Explore Projects -->
+
+<div class="section explore-projects">
+    <div class="Grid container">
+        <div class="Grid-cell left-text u-size5of12 u-after1of12">
+            <h1 class="small-title mega-margin">Explore Projects</h1>
+            <p class="mega-margin">Twitter has been built on open source since the beginning. Openness is part of our DNA. The projects you see here were born at Twitter, and patches are always welcome!</p>
+            <button onclick="location.href='projects.html'" type="button" class="Button Button--large">View All Projects</button>
+        </div>
+        <div class="Grid-cell explore-projects-blank"></div>
+    </div>
+</div>
+
+<!-- Follow Us @TwitterOSS -->
+
+<div class="grey section">
+    <div class="Grid container">
+        <!-- The heading "Follow Us @JoePadfield" is inserted with Javascript -->
+        <div id="open-source-timeline" class="Grid-cell timeline-cell u-size1of2">
+            <a class="twitter-timeline" data-height="700px" href="https://twitter.com/JoePadfield?ref_src=twsrc%5Etfw">Tweets by JoePadfield</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+</div>
