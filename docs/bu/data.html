@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="NG API System" />
+		<meta name="keywords" content="National Gallery|Paintings|Semantics|Open Linked Data|API|CIDOC|crm" />
+    <meta name="author" content="Joseph Padfield| joseph.padfield@ng-london.org.uk |National Gallery | London UK | website@ng-london.org.uk | www.nationalgallery.org.uk" />
+    <link rel="icon" href="https://www.nationalgallery.org.uk/custom/ng/img/icons/favicon.ico">
+    <title>NG Example CRM Modelling</title>
+    
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/jquery.json-viewer.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+
+  <body>
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand"  href="./">
+  		<img id="page-logo" class="logo" title="Logo" src="graphics/ng-logo-white-100x40.png" 
+				style="" alt="The National Gallery"/>
+		  </a>
+						<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+     <ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="">Home</a></li>
+					<li class="nav-item">
+						<a class="nav-link" href="mods.html">Models</a></li>
+					<li class="nav-item">
+						<a class="nav-link active" href="data.html">Data<span class="sr-only">(current)</span></a></li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">About</a></li></ul>
+                
+      </div>
+			
+    <span class="navbar-text">
+      <a href="http://www.iperionch.eu/">
+				<img id="ex-logo1" class="logo" style="height:32px;" title="IPERION-CH" src="graphics/IPERION-CH_logo_trans.png" 
+				style="" alt="IPERION CH | Integrated Platform for the European Research Infrastructure ON Cultural Heritage"/>
+		  </a>
+      <a href="https://sshopencloud.eu/">
+				<img id="ex-logo2" class="logo" style="height:32px;" title="Logo" src="graphics/sshoc-logo.png" 
+				style="" alt="SSHOC | Social Sciences & Humanities Open Cloud"/>
+		  </a>
+    </span>
+    </nav>
+			<div class="row ">
+			 <div class="col-12 col-md-12">          
+				
+				<div class="jumbotron"><h2>National Gallery - CIDOC CRM Modelling Examples</h2></div>
+				
+				<!-- PAGE CONTENT -->
+				
+				<div class="row"><div class="col-6 col-lg-6"><h2>Data preparation</h2>
+<p>This site has been setup to present a series of examples of how the CIDOC CRM can be used to model actual heritage data, however it is not meant to be a static resource. The models that are presented here are expected to change overtime as a result of further research and discussion and potentially new models may be added. The goal is to create a resource that aims to present a <i>current</i> view of the consensus of how the CIDOC CRM is used to model data in practical systems.</p>
+
+<p>In order to make the process of editing the models as easy as possible they are created dynamically from a simple list of tab separated triples as shown here. Simple changes to this root data file will result in the presented models changing, as all of the required processing and formatting, for these complex presentations, are carried out automatically each time a model is loaded.</p>
+
+<p>In order to allow others to participate in future discussions, and help update these models, the raw files are going to be uploaded to <a href="https://github.com/jpadfield/cidoc-crm.examples">GitHub</a>. This will allow details of all issues, comments and even older versions of the models to be publicly organised and presented.</p>
+<center><a href="https://github.com/jpadfield/cidoc-crm.examples"><img style="position:relative;width:150px;" src="https://research.ng-london.org.uk/ng/graphics/github logo.png"/></a></center>
+</div><!--/span--><div class="col-6 col-lg-6"><pre style="overflow: hidden;border: 2px solid black;padding: 10px;">
+////////////////////////////////////////////////////////////////////////
+// Model: artist // Primary relationships describing an Artist
+// D8.5 Figure 4
+////////////////////////////////////////////////////////////////////////
+ng:0F6J-0001-0000-0000	crm:P2.has type	crm:E21.Person	aPID@@crm
+ng:0F6J-0001-0000-0000	crm:P2.has type	aat:300411314
+aat:300411314	rdfs:label	artist painters@en
+ng:0F6J-0001-0000-0000	crm:P2.has type	aat:300024987
+aat:300024987	rdfs:label	architechts@en
+ng:0F6J-0001-0000-0000	owl:sameAs	ulan:500023578
+ulan:500023578	rdfs:label	Raphael@en
+ng:0F6J-0001-0000-0000	owl:sameAs	wd:Q5597
+wd:Q5597	rdfs:label	Raphael@en
+ng:0F6J-0001-0000-0000	rdfs:seeAlso	https://cima.ng-london.org.uk/documentation
+https://cima.ng-london.org.uk/documentation	rdfs:label	Raphael Research Resource@en
+ng:0F6J-0001-0000-0000	rdfs:comment	Free Text@en
+ng:0F6J-0001-0000-0000	crm:P14.performed	ngo:002-0432-0000	aPID@@ePID
+
+_Blank Node	crm:P2.has type	crm:E41.Appellation
+ng:0F6J-0001-0000-0000	crm:P131.is identified by	_Blank Node
+_Blank Node	rdfs:label	Raphael@en
+
+_Blank Node	crm:P2.has type	crm:E74.Group	aPID@@crm
+ng:0F6J-0001-0000-0000	crm:P15.was influenced by	_Blank Node
+_Blank Node	owl:sameAs	aat:300107304
+aat:300107304	rdfs:label	Ancient Italian@en
+
+_Blank Node	crm:P2.has type	crm:E67 Birth	event@@crm
+ng:0F6J-0001-0000-0000	crm:P98.was born	_Blank Node
+
+_Blank Node	crm:P2.has type	crm:E53 Place
+_Blank Node-1	crm:P7.took place at	_Blank Node
+_Blank Node	owl:sameAs	tgn:7003994
+_Blank Node	owl:sameAs	wd:Q2759
+tgn:7003994	rdfs:label	Urbino (inhabited place)@en
+</pre></div><!--/span--></div><!--/row-->    <br/>
+			</div><!--/span-->
+			
+			
+			</div><!--/row-->
+			
+<!-- PAGE CONTENT END-->
+							
+			  <footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-5" style="text-align:left;">&copy; The National Gallery 2020</p></div>
+				<div class="col-2" style="text-align:center;"></div>
+				<div class="col-5" style="text-align:right;"><a href="https://www.nationalgallery.org.uk/">
+    <img height="16" alt="National Gallery" title="National Gallery"
+      src="graphics/ng-logo-black-100x40.png"/>
+</a><a href="http://rightsstatements.org/vocab/InC-EDU/1.0/">
+    <img height="16" alt="In Copyright - Educational Use Permitted" title="In Copyright - Educational Use Permitted"
+      src="graphics/InC-EDU.dark-white-interior-blue-type.png"/>
+</a><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>
+</div>
+			</div>
+		</div>        
+  </footer>
+    </div><!--/.container-->
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/tether.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.json-viewer.js"></script>
+
+  </body>
+</html>

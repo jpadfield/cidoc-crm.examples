@@ -1,0 +1,2078 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="utf-8">
+        <title></title>
+        
+        <link rel="stylesheet" href="../css/mermaid.css">
+    <style>			
+		
+body
+{
+  #background-color: #fcfcfc;
+}
+
+
+.list
+{
+	left:80px;
+}
+
+g a 
+			{color:inherit;}
+
+.nav-button {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.btn-default {
+    color: #333333;
+    background-color: #ffffff;
+    border-color: #cccccc;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+    color: #333333;
+    background-color: #ebebeb;
+    border-color: #adadad;
+}
+
+		</style>
+  </head>
+    <body>
+    <div class="center-div">
+        <div id="split-container">
+            <a class="btn btn-default nav-button" id="nav-home" href="../index.html">
+                Home
+            </a>            
+            <a class="btn btn-default nav-button" style="left:80px;" id="nav-models" href="../models.html">
+                Models
+            </a>
+            <div id="graph-container">
+                <div id="graph">	<div class="mermaid">
+graph LR
+
+classDef crm stroke:#333333,fill:#DCDCDC,color:#333333,rx:5px,ry:5px;
+classDef thing stroke:#2C5D98,fill:#D0E5FF,color:#2C5D98,rx:5px,ry:5px;
+classDef event stroke:#6B9624,fill:#D0DDBB,color:#6B9624,rx:5px,ry:5px;
+classDef oPID stroke:#2C5D98,fill:#2C5D98,color:white,rx:5px,ry:5px;
+classDef ePID stroke:#6B9624,fill:#6B9624,color:white,rx:5px,ry:5px;
+classDef aPID stroke:black,fill:#FFFF99,rx:20px,ry:20px;
+classDef type stroke:red,fill:#B51511,color:white,rx:5px,ry:5px;
+classDef name stroke:orange,fill:#FEF3BA,rx:20px,ry20px;
+classDef literal stroke:black,fill:#FFB975,rx:2px,ry:2px,max-width:100px;
+classDef classstyle stroke:black,fill:white;
+classDef url stroke:#2C5D98,fill:white,color:#2C5D98,rx:5px,ry:5px;
+classDef note stroke:#2C5D98,fill:#D8FDFF,color:#2C5D98,rx:5px,ry:5px;
+
+O0("_Blank Node-N1")
+class O0 event;
+
+O1("crm:E16.Measurement-0")
+class O1 crm;
+O0 -- crm:P2.has type -->O1["crm:E16.Measurement"]
+
+O2("aat:300081685")
+class O2 type;
+click O2 "http://vocab.getty.edu/aat/300081685" "Tooltip"
+O0 -- crm:P2.has type -->O2["aat:300081685"]
+
+O3("aat:300223948")
+class O3 type;
+click O3 "http://vocab.getty.edu/aat/300223948" "Tooltip"
+O0 -- crm:P32.used general technique -->O3["aat:300223948"]
+
+O4("ngi:M0001")
+class O4 oPID;
+O0 -- crm:P33.used specific technique -->O4["ngi:M0001"]
+
+O5("GC­MS analysis of OS8 a grey/white paint sample from the parapet behind the Virgin’s throne@en")
+class O5 literal;
+O0 -- rdfs:comment -->O5["GC­MS analysis of OS8 a grey/white paint sample from the<br/>parapet behind the Virgin’s throne@en"]
+
+O6("ngi:R000001")
+class O6 oPID;
+O0 -- crm:P70.is documented in -->O6["ngi:R000001"]
+
+O7("ngi:NG1171­-OS8-­GC")
+class O7 oPID;
+O0 -- crm:P108.has produced -->O7["ngi:NG1171­-OS8-­GC"]
+
+O8("ngo:00D-0002-0000")
+class O8 aPID;
+click O8 "http://data.ng-london.org.uk/resource/00D-0002-0000" "Tooltip"
+O0 -- crm:P14.carried out by -->O8["ngo:00D-0002-0000"]
+
+O9("ngi:NG1171­-OS8")
+class O9 oPID;
+O0 -- crm:P39.measured -->O9["ngi:NG1171­-OS8"]
+
+O10("crm:E73.Informational Object-1")
+class O10 crm;
+O7 -- crm:P2.has type -->O10["crm:E73.Informational Object"]
+
+O11("wd:Q1172284")
+class O11 type;
+click O11 "https://www.wikidata.org/wiki/Q1172284" "Tooltip"
+O7 -- crm:P2.has type -->O11["wd:Q1172284"]
+
+O12("data set@en")
+class O12 literal;
+O11 -- rdfs:label -->O12["data set@en"]
+
+O13("wd:Q3192054")
+class O13 type;
+click O13 "https://www.wikidata.org/wiki/Q3192054" "Tooltip"
+O7 -- crm:P2.has type -->O13["wd:Q3192054"]
+
+O14("chromatogram@en")
+class O14 literal;
+O13 -- rdfs:label -->O14["chromatogram@en"]
+
+O15("_Blank Node-N2")
+class O15 event;
+
+O16("crm:E6.Destruction-2")
+class O16 crm;
+O15 -- crm:P2.has type -->O16["crm:E6.Destruction"]
+O15 -- crm:P13.destroyed -->O9["ngi:NG1171­-OS8"]
+O0 -- owl:sameAs -->O15["_Blank Node-N2"]
+
+O17("_Blank Node-N3")
+class O17 thing;
+
+O18("crm:E54.Dimension-3")
+class O18 crm;
+O17 -- crm:P2.has type -->O18["crm:E54.Dimension"]
+O0 -- crm:P40.observed dimension -->O17["_Blank Node-N3"]
+O17 -- owl:sameAs -->O7["ngi:NG1171­-OS8-­GC"]
+
+O19("_Blank Node-N4")
+class O19 thing;
+
+O20("crm:E54.Dimension-4")
+class O20 crm;
+O19 -- crm:P2.has type -->O20["crm:E54.Dimension"]
+
+O21("ngo:00A­-00E5-0000")
+class O21 oPID;
+O19 -- crm:P2.has type -->O21["ngo:00A­-00E5-0000"]
+O7 -- crm:P43.has dimension -->O19["_Blank Node-N4"]
+
+O22("2.9#xsd:float")
+class O22 literal;
+O19 -- crm:P90.has value -->O22["2.9#xsd:float"]
+
+O23("palmitate to stearate ratio@en")
+class O23 literal;
+O21 -- rdfs:label -->O23["palmitate to stearate ratio@en"]
+
+O24("_Blank Node-N5")
+class O24 event;
+
+O25("crm:E13.Attribution Assignment-5")
+class O25 crm;
+O24 -- crm:P2.has type -->O25["crm:E13.Attribution Assignment"]
+
+O26("ngi:NG1171-OS8-MS")
+class O26 oPID;
+O24 -- crm:P140.assigned attribute to -->O26["ngi:NG1171-OS8-MS"]
+O24 -- crm:P141.assigned -->O19["_Blank Node-N4"]
+O24 -- crm:P16.used specific object -->O26["ngi:NG1171-OS8-MS"]
+
+O27("_Blank Node-N6")
+class O27 thing;
+
+O28("crm:E54.Dimension-6")
+class O28 crm;
+O27 -- crm:P2.has type -->O28["crm:E54.Dimension"]
+
+O29("ngo:00A-­00E6-­0000")
+class O29 oPID;
+click O29 "http://data.ng-london.org.uk/resource/00A-­00E6-­0000" "Tooltip"
+O27 -- crm:P2.has type -->O29["ngo:00A-­00E6-­0000"]
+O7 -- crm:P43.has dimension -->O27["_Blank Node-N6"]
+
+O30("2.2#xsd:float")
+class O30 literal;
+O27 -- crm:P90.has value -->O30["2.2#xsd:float"]
+
+O31("azelate to palmitate ratio@en")
+class O31 literal;
+O29 -- rdfs:label -->O31["azelate to palmitate ratio@en"]
+
+O32("_Blank Node-N7")
+class O32 event;
+
+O33("crm:E13.Attribution Assignment-7")
+class O33 crm;
+O32 -- crm:P2.has type -->O33["crm:E13.Attribution Assignment"]
+O32 -- crm:P140.assigned attribute to -->O26["ngi:NG1171-OS8-MS"]
+O32 -- crm:P141.assigned -->O27["_Blank Node-N6"]
+O32 -- crm:P16.used specific object -->O26["ngi:NG1171-OS8-MS"]
+
+O34("_Blank Node-N8")
+class O34 thing;
+
+O35("crm:E54.Dimension-8")
+class O35 crm;
+O34 -- crm:P2.has type -->O35["crm:E54.Dimension"]
+
+O36("ngo:00A-­00E7-­0000")
+class O36 oPID;
+click O36 "http://data.ng-london.org.uk/resource/00A-­00E7-­0000" "Tooltip"
+O34 -- crm:P2.has type -->O36["ngo:00A-­00E7-­0000"]
+O7 -- crm:P43.has dimension -->O34["_Blank Node-N8"]
+
+O37("2.7#xsd:float")
+class O37 literal;
+O34 -- crm:P90.has value -->O37["2.7#xsd:float"]
+
+O38("azelate to suberate ratio@en")
+class O38 literal;
+O36 -- rdfs:label -->O38["azelate to suberate ratio@en"]
+
+O39("_Blank Node-N9")
+class O39 event;
+
+O40("crm:E13.Attribution Assignment-9")
+class O40 crm;
+O39 -- crm:P2.has type -->O40["crm:E13.Attribution Assignment"]
+O39 -- crm:P140.assigned attribute to -->O26["ngi:NG1171-OS8-MS"]
+O39 -- crm:P141.assigned -->O34["_Blank Node-N8"]
+O39 -- crm:P16.used specific object -->O26["ngi:NG1171-OS8-MS"]
+
+O41("crm:E21.Person-10")
+class O41 crm;
+O8 -- crm:P2.has type -->O41["crm:E21.Person"]
+
+O42("aat:300025820")
+class O42 type;
+click O42 "http://vocab.getty.edu/aat/300025820" "Tooltip"
+O8 -- crm:P2.has type -->O42["aat:300025820"]
+
+O43("Example NG Staff Member@en")
+class O43 literal;
+O8 -- rdfs:label -->O43["Example NG Staff Member@en"]
+
+O44("conservation scientist@en")
+class O44 literal;
+O42 -- rdfs:label -->O44["conservation scientist@en"]
+
+O45("crm:E31.Document-11")
+class O45 crm;
+O6 -- crm:P2.has type -->O45["crm:E31.Document"]
+
+O46("Organic Report for NG1171@en")
+class O46 literal;
+O6 -- rdfs:label -->O46["Organic Report for NG1171@en"]
+
+O47("NG GC-MS Method 2009@en")
+class O47 literal;
+O4 -- rdfs:label -->O47["NG GC-MS Method 2009@en"]
+
+O48("crm:E29.Design or Procedure-12")
+class O48 crm;
+O4 -- crm:P2.has type -->O48["crm:E29.Design or Procedure"]
+
+O49("chemical analysis@en")
+class O49 literal;
+O2 -- rdfs:label -->O49["chemical analysis@en"]
+
+O50("gas chromatography@en")
+class O50 literal;
+O3 -- rdfs:label -->O50["gas chromatography@en"]
+
+O51("_Blank Node-N10")
+class O51 event;
+
+O52("crm:E13.Attribution Assignment-13")
+class O52 crm;
+O51 -- crm:P2.has type -->O52["crm:E13.Attribution Assignment"]
+
+O53("ngi:NG1171-OS8")
+class O53 oPID;
+O51 -- crm:P140.assigned attribute to -->O53["ngi:NG1171-OS8"]
+O51 -- crm:P16.used specific object -->O26["ngi:NG1171-OS8-MS"]
+
+O54("_Blank Node-N11")
+class O54 thing;
+
+O55("crm:E57.Material-14")
+class O55 crm;
+O54 -- crm:P2.has type -->O55["crm:E57.Material"]
+
+O56("aat:300163343")
+class O56 type;
+click O56 "http://vocab.getty.edu/aat/300163343" "Tooltip"
+O54 -- crm:P2.has type -->O56["aat:300163343"]
+
+O57("aat:300014310")
+class O57 type;
+click O57 "http://vocab.getty.edu/aat/300014310" "Tooltip"
+O54 -- crm:P45.consists of -->O57["aat:300014310"]
+O51 -- crm:P141.assigned -->O54["_Blank Node-N11"]
+O53 -- crm:P46.is composed of -->O54["_Blank Node-N11"]
+
+O58("walnut oil@en")
+class O58 literal;
+O57 -- rdfs:label -->O58["walnut oil@en"]
+
+O59("media (artists' materials)@en")
+class O59 literal;
+O56 -- rdfs:label -->O59["media (artists' materials)@en"]
+
+O60("_Blank Node-N12")
+class O60 event;
+
+O61("crm:E9.Event-15")
+class O61 crm;
+O60 -- crm:P2.has type -->O61["crm:E9.Event"]
+
+O62("ngo:00A-00DZ-0000")
+class O62 oPID;
+click O62 "http://data.ng-london.org.uk/resource/00A-00DZ-0000" "Tooltip"
+O60 -- crm:P2.has type -->O62["ngo:00A-00DZ-0000"]
+
+O63("Annotation (event)@en")
+class O63 literal;
+O62 -- rdfs:label -->O63["Annotation (event)@en"]
+O60 -- crm:P14.carried out by -->O8["ngo:00D-0002-0000"]
+
+O64("ngi:N-1171-00-000052-S02")
+class O64 oPID;
+O60 -- crm:P7.took place at -->O64["ngi:N-1171-00-000052-S02"]
+
+O65("crm:E21.Person-16")
+class O65 crm;
+O8 -- crm:P2.has type -->O65["crm:E21.Person"]
+O8 -- crm:P2.has type -->O42["aat:300025820"]
+O8 -- rdfs:label -->O43["Example NG Staff Member@en"]
+O42 -- rdfs:label -->O44["conservation scientist@en"]
+
+O66("_Blank Node-N13")
+class O66 thing;
+
+O67("crm:E31.Document-17")
+class O67 crm;
+O66 -- crm:P2.has type -->O67["crm:E31.Document"]
+O60 -- crm:P70.is documented in -->O66["_Blank Node-N13"]
+
+O68("This can include the reason and purpose of the Area of Interest, as ext, images, video, etc..@en")
+class O68 literal;
+O66 -- rdfs:comment -->O68["This can include the reason and purpose of the Area of<br/>Interest, as ext, images, video, etc..@en"]
+
+O69("ng:0FJS-0001-0000-0000")
+class O69 oPID;
+click O69 "http://data.ng-london.org.uk/0FJS-0001-0000-0000" "Tooltip"
+
+O70("crm:E22.Man-Made Object-18")
+class O70 crm;
+O69 -- crm:P2.has type -->O70["crm:E22.Man-Made Object"]
+O69 -- crm:P59.has section -->O64["ngi:N-1171-00-000052-S02"]
+
+O71("crm:E53.Place-19")
+class O71 crm;
+O64 -- crm:P2.has type -->O71["crm:E53.Place"]
+
+O72("ngo:00A-00E0-0000")
+class O72 oPID;
+click O72 "http://data.ng-london.org.uk/resource/00A-00E0-0000" "Tooltip"
+O64 -- crm:P2.has type -->O72["ngo:00A-00E0-0000"]
+
+O73("Free text description of the Area of Interest@en")
+class O73 literal;
+O64 -- rdfs:comment -->O73["Free text description of the Area of Interest@en"]
+
+O74("_Blank Node-N14")
+class O74 thing;
+
+O75("crm:E31.Document-20")
+class O75 crm;
+O74 -- crm:P2.has type -->O75["crm:E31.Document"]
+O64 -- crm:P70.is documented in -->O74["_Blank Node-N14"]
+
+O76("This allows additional links to stand-alone and/or legacy reports, publications, databases, etc.@en")
+class O76 literal;
+O74 -- note -->O76["This allows additional links to stand-alone and/or legacy<br/>reports, publications, databases, etc.@en"]
+
+O77("_Blank Node-N15")
+class O77 thing;
+
+O78("crm:E41.Appellation-21")
+class O78 crm;
+O77 -- crm:P2.has type -->O78["crm:E41.Appellation"]
+
+O79("aat:300248475")
+class O79 type;
+click O79 "http://vocab.getty.edu/aat/300248475" "Tooltip"
+O77 -- crm:P2.has type -->O79["aat:300248475"]
+O74 -- crm:P1.is identified by -->O77["_Blank Node-N15"]
+O64 -- crm:P1.is identified by -->O77["_Blank Node-N15"]
+
+O80("_Blank Node-N16")
+class O80 thing;
+
+O81("crm:E31.Document-22")
+class O81 crm;
+O80 -- crm:P2.has type -->O81["crm:E31.Document"]
+
+O82("aat:300026100")
+class O82 type;
+click O82 "http://vocab.getty.edu/aat/300026100" "Tooltip"
+O80 -- crm:P2.has type -->O82["aat:300026100"]
+O77 -- crm:P70.is documented in -->O80["_Blank Node-N16"]
+
+O83("Actual html content of the annotation@en")
+class O83 literal;
+O80 -- rdfs:comment -->O83["Actual html content of the annotation@en"]
+
+O84("_Blank Node-N17")
+class O84 thing;
+
+O85("crm:E54.Dimension-23")
+class O85 crm;
+O84 -- crm:P2.has type -->O85["crm:E54.Dimension"]
+
+O86("ngo:00A-00DW-0000")
+class O86 oPID;
+click O86 "http://data.ng-london.org.uk/resource/00A-00DW-0000" "Tooltip"
+O84 -- crm:P2.has type -->O86["ngo:00A-00DW-0000"]
+O77 -- crm:P43.has dimension -->O84["_Blank Node-N17"]
+
+O87("170#xsd:decimal")
+class O87 literal;
+O84 -- crm:P90.has value -->O87["170#xsd:decimal"]
+
+O88("aat:300266190")
+class O88 type;
+click O88 "http://vocab.getty.edu/aat/300266190" "Tooltip"
+O84 -- crm:P91.has unit -->O88["aat:300266190"]
+
+O89("_Blank Node-N18")
+class O89 thing;
+
+O90("crm:E54.Dimension-24")
+class O90 crm;
+O89 -- crm:P2.has type -->O90["crm:E54.Dimension"]
+
+O91("ngo:00A-00DX-0000")
+class O91 oPID;
+click O91 "http://data.ng-london.org.uk/resource/00A-00DX-0000" "Tooltip"
+O89 -- crm:P2.has type -->O91["ngo:00A-00DX-0000"]
+O77 -- crm:P43.has dimension -->O89["_Blank Node-N18"]
+
+O92("6239#xsd:decimal")
+class O92 literal;
+O89 -- crm:P90.has value -->O92["6239#xsd:decimal"]
+O89 -- crm:P91.has unit -->O88["aat:300266190"]
+
+O93("_Blank Node-N19")
+class O93 thing;
+
+O94("crm:E54.Dimension-25")
+class O94 crm;
+O93 -- crm:P2.has type -->O94["crm:E54.Dimension"]
+
+O95("aat:300055647")
+class O95 type;
+click O95 "http://vocab.getty.edu/aat/300055647" "Tooltip"
+O93 -- crm:P2.has type -->O95["aat:300055647"]
+O77 -- crm:P43.has dimension -->O93["_Blank Node-N19"]
+
+O96("200#xsd:decimal")
+class O96 literal;
+O93 -- crm:P90.has value -->O96["200#xsd:decimal"]
+O93 -- crm:P91.has unit -->O88["aat:300266190"]
+
+O97("_Blank Node-N20")
+class O97 thing;
+
+O98("crm:E54.Dimension-26")
+class O98 crm;
+O97 -- crm:P2.has type -->O98["crm:E54.Dimension"]
+
+O99("aat:300055644")
+class O99 type;
+click O99 "http://vocab.getty.edu/aat/300055644" "Tooltip"
+O97 -- crm:P2.has type -->O99["aat:300055644"]
+O77 -- crm:P43.has dimension -->O97["_Blank Node-N20"]
+O97 -- crm:P90.has value -->O96["200#xsd:decimal"]
+O97 -- crm:P91.has unit -->O88["aat:300266190"]
+
+O100("place@en")
+class O100 literal;
+O79 -- rdfs:label -->O100["place@en"]
+
+O101("annotations@en")
+class O101 literal;
+O82 -- rdfs:label -->O101["annotations@en"]
+
+O102("Area of Interest@en")
+class O102 literal;
+O72 -- rdfs:label -->O102["Area of Interest@en"]
+
+O103("width@en")
+class O103 literal;
+O95 -- rdfs:label -->O103["width@en"]
+
+O104("height@en")
+class O104 literal;
+O99 -- rdfs:label -->O104["height@en"]
+
+O105("X Dimension@en")
+class O105 literal;
+O86 -- rdfs:label -->O105["X Dimension@en"]
+
+O106("Y Dimension@en")
+class O106 literal;
+O91 -- rdfs:label -->O106["Y Dimension@en"]
+
+O107("pixels@en")
+class O107 literal;
+O88 -- rdfs:label -->O107["pixels@en"]
+
+O108("ng:0F6J-0001-0000-0000")
+class O108 aPID;
+click O108 "http://data.ng-london.org.uk/0F6J-0001-0000-0000" "Tooltip"
+
+O109("crm:E21.Person-27")
+class O109 crm;
+O108 -- crm:P2.has type -->O109["crm:E21.Person"]
+
+O110("aat:300411314")
+class O110 type;
+click O110 "http://vocab.getty.edu/aat/300411314" "Tooltip"
+O108 -- crm:P2.has type -->O110["aat:300411314"]
+
+O111("artist painters@en")
+class O111 literal;
+O110 -- rdfs:label -->O111["artist painters@en"]
+
+O112("aat:300024987")
+class O112 type;
+click O112 "http://vocab.getty.edu/aat/300024987" "Tooltip"
+O108 -- crm:P2.has type -->O112["aat:300024987"]
+
+O113("architechts@en")
+class O113 literal;
+O112 -- rdfs:label -->O113["architechts@en"]
+
+O114("ulan:500023578")
+class O114 type;
+click O114 "http://vocab.getty.edu/ulan/500023578" "Tooltip"
+O108 -- owl:sameAs -->O114["ulan:500023578"]
+
+O115("Raphael@en")
+class O115 literal;
+O114 -- rdfs:label -->O115["Raphael@en"]
+
+O116("wd:Q5597")
+class O116 type;
+click O116 "https://www.wikidata.org/wiki/Q5597" "Tooltip"
+O108 -- owl:sameAs -->O116["wd:Q5597"]
+O116 -- rdfs:label -->O115["Raphael@en"]
+
+O117("https://cima.ng-london.org.uk/documentation")
+class O117 url;
+click O117 "https://cima.ng-london.org.uk/documentation" "Tooltip"
+O108 -- rdfs:seeAlso -->O117["https://cima.ng-london.org.uk/documentation"]
+
+O118("Raphael Research Resource@en")
+class O118 literal;
+O117 -- rdfs:label -->O118["Raphael Research Resource@en"]
+
+O119("Free Text@en")
+class O119 literal;
+O108 -- rdfs:comment -->O119["Free Text@en"]
+
+O120("ngo:002-0432-0000")
+class O120 ePID;
+click O120 "http://data.ng-london.org.uk/resource/002-0432-0000" "Tooltip"
+O108 -- crm:P14.performed -->O120["ngo:002-0432-0000"]
+
+O121("_Blank Node-N21")
+class O121 thing;
+
+O122("crm:E41.Appellation-28")
+class O122 crm;
+O121 -- crm:P2.has type -->O122["crm:E41.Appellation"]
+O108 -- crm:P131.is identified by -->O121["_Blank Node-N21"]
+O121 -- rdfs:label -->O115["Raphael@en"]
+
+O123("_Blank Node-N22")
+class O123 aPID;
+
+O124("crm:E74.Group-29")
+class O124 crm;
+O123 -- crm:P2.has type -->O124["crm:E74.Group"]
+O108 -- crm:P15.was influenced by -->O123["_Blank Node-N22"]
+
+O125("aat:300107304")
+class O125 type;
+click O125 "http://vocab.getty.edu/aat/300107304" "Tooltip"
+O123 -- owl:sameAs -->O125["aat:300107304"]
+
+O126("Ancient Italian@en")
+class O126 literal;
+O125 -- rdfs:label -->O126["Ancient Italian@en"]
+
+O127("_Blank Node-N23")
+class O127 event;
+
+O128("crm:E67 Birth-30")
+class O128 crm;
+O127 -- crm:P2.has type -->O128["crm:E67 Birth"]
+O108 -- crm:P98.was born -->O127["_Blank Node-N23"]
+
+O129("_Blank Node-N24")
+class O129 thing;
+
+O130("crm:E53 Place-31")
+class O130 crm;
+O129 -- crm:P2.has type -->O130["crm:E53 Place"]
+O127 -- crm:P7.took place at -->O129["_Blank Node-N24"]
+
+O131("tgn:7003994")
+class O131 type;
+click O131 "http://vocab.getty.edu/tgn/7003994" "Tooltip"
+O129 -- owl:sameAs -->O131["tgn:7003994"]
+
+O132("wd:Q2759")
+class O132 type;
+click O132 "https://www.wikidata.org/wiki/Q2759" "Tooltip"
+O129 -- owl:sameAs -->O132["wd:Q2759"]
+
+O133("Urbino (inhabited place)@en")
+class O133 literal;
+O131 -- rdfs:label -->O133["Urbino (inhabited place)@en"]
+
+O134("_Blank Node-N25")
+class O134 thing;
+
+O135("crm:E52.Time-span-32")
+class O135 crm;
+O134 -- crm:P2.has type -->O135["crm:E52.Time-span"]
+
+O136("aat:300379244")
+class O136 type;
+click O136 "http://vocab.getty.edu/aat/300379244" "Tooltip"
+O134 -- crm:P2.has type -->O136["aat:300379244"]
+
+O137("years@en")
+class O137 literal;
+O136 -- rdfs:label -->O137["years@en"]
+O127 -- crm:P4.has timespan -->O134["_Blank Node-N25"]
+
+O138("1483-01-01 #xsd:dateTime")
+class O138 literal;
+O134 -- crm:P82a.begin of the begin -->O138["1483-01-01 #xsd:dateTime"]
+
+O139("1483-12-31 #xsd:dateTime")
+class O139 literal;
+O134 -- crm:P82a.end of the end -->O139["1483-12-31 #xsd:dateTime"]
+
+O140("1483@en")
+class O140 literal;
+O134 -- rdfs:label -->O140["1483@en"]
+
+O141("wd:Q6637")
+class O141 type;
+click O141 "https://www.wikidata.org/wiki/Q6637" "Tooltip"
+O134 -- owl:sameAs -->O141["wd:Q6637"]
+
+O142("_Blank Node-N26")
+class O142 event;
+
+O143("crm:E69 Death-33")
+class O143 crm;
+O142 -- crm:P2.has type -->O143["crm:E69 Death"]
+O108 -- crm:P100.died in -->O142["_Blank Node-N26"]
+
+O144("_Blank Node-N27")
+class O144 thing;
+
+O145("crm:E53 Place-34")
+class O145 crm;
+O144 -- crm:P2.has type -->O145["crm:E53 Place"]
+O142 -- crm:P7.took place at -->O144["_Blank Node-N27"]
+
+O146("tgn:7000874")
+class O146 type;
+click O146 "http://vocab.getty.edu/tgn/7000874" "Tooltip"
+O144 -- owl:sameAs -->O146["tgn:7000874"]
+
+O147("wd:Q220")
+class O147 type;
+click O147 "https://www.wikidata.org/wiki/Q220" "Tooltip"
+O144 -- owl:sameAs -->O147["wd:Q220"]
+
+O148("Rome (inhabited place)@en")
+class O148 literal;
+O146 -- rdfs:label -->O148["Rome (inhabited place)@en"]
+
+O149("_Blank Node-N28")
+class O149 thing;
+
+O150("crm:E52.Time-span-35")
+class O150 crm;
+O149 -- crm:P2.has type -->O150["crm:E52.Time-span"]
+O149 -- crm:P2.has type -->O136["aat:300379244"]
+O142 -- crm:P4.has timespan -->O149["_Blank Node-N28"]
+
+O151("1520-01-01 #xsd:dateTime")
+class O151 literal;
+O149 -- crm:P82a.begin of the begin -->O151["1520-01-01 #xsd:dateTime"]
+
+O152("1520-12-31 #xsd:dateTime")
+class O152 literal;
+O149 -- crm:P82a.end of the end -->O152["1520-12-31 #xsd:dateTime"]
+
+O153("1520@en")
+class O153 literal;
+O149 -- rdfs:label -->O153["1520@en"]
+
+O154("wd:Q6284")
+class O154 type;
+click O154 "https://www.wikidata.org/wiki/Q6284" "Tooltip"
+O149 -- owl:sameAs -->O154["wd:Q6284"]
+
+O155("_Blank Node-N29")
+class O155 thing;
+
+O156("crm:E31 Document-36")
+class O156 crm;
+O155 -- crm:P2.has type -->O156["crm:E31 Document"]
+O108 -- crm:P70.is documented in -->O155["_Blank Node-N29"]
+
+O157("https://cima.ng-london.org.uk/documentation/files/2009/10/01/Raphael%20Catalogue%20Complete.pdf")
+class O157 url;
+click O157 "https://cima.ng-london.org.uk/documentation/files/2009/10/01/Raphael%20Catalogue%20Complete.pdf" "Tooltip"
+O155 -- owl:sameAs -->O157["https://cima.ng-london.org.uk/documentation/files/2009/10/01<br/>/Raphael%20Catalogue%20Complete.pdf"]
+
+O158("https://www.book-info.com/isbn/1-85709-999-0.htm")
+class O158 url;
+click O158 "https://www.book-info.com/isbn/1-85709-999-0.htm" "Tooltip"
+O155 -- rdfs:seeAlso -->O158["https://www.book-info.com/isbn/1-85709-999-0.htm"]
+
+O159("Raphael: From Urbino to Rome@en")
+class O159 literal;
+O155 -- rdfs:label -->O159["Raphael: From Urbino to Rome@en"]
+O7 -- crm:P2.has type -->O11["wd:Q1172284"]
+O11 -- rdfs:label -->O12["data set@en"]
+O7 -- crm:P2.has type -->O13["wd:Q3192054"]
+O13 -- rdfs:label -->O14["chromatogram@en"]
+
+O160("_Blank Node-N30")
+class O160 event;
+
+O161("crm:E16.Measurement-37")
+class O161 crm;
+O160 -- crm:P2.has type -->O161["crm:E16.Measurement"]
+O7 -- crm:P108.was produced by -->O160["_Blank Node-N30"]
+
+O162("_Blank Node-N31")
+class O162 thing;
+
+O163("crm:E54.Dimension-38")
+class O163 crm;
+O162 -- crm:P2.has type -->O163["crm:E54.Dimension"]
+
+O164("wd:Q2199864")
+class O164 type;
+click O164 "https://www.wikidata.org/wiki/Q2199864" "Tooltip"
+O162 -- crm:P2.has type -->O164["wd:Q2199864"]
+O7 -- crm:P43.has dimension -->O162["_Blank Node-N31"]
+
+O165("29.5#xsd:float")
+class O165 literal;
+O162 -- crm:P90.has value -->O165["29.5#xsd:float"]
+
+O166("aat:300379240")
+class O166 type;
+click O166 "http://vocab.getty.edu/aat/300379240" "Tooltip"
+O162 -- crm:P91.has unit -->O166["aat:300379240"]
+
+O167("minutes (units for duration)@en")
+class O167 literal;
+O166 -- rdfs:label -->O167["minutes (units for duration)@en"]
+
+O168("duration@en")
+class O168 literal;
+O164 -- rdfs:label -->O168["duration@en"]
+
+O169("ngi:NG1171­-OS8-­GC-IM01")
+class O169 oPID;
+
+O170("crm:E36.Visual Item-39")
+class O170 crm;
+O169 -- crm:P2.has type -->O170["crm:E36.Visual Item"]
+O7 -- crm:P138.has representation -->O169["ngi:NG1171­-OS8-­GC-IM01"]
+
+O171("Generally, some form of graphical presentation as a standalone graph or part of a digital system@en")
+class O171 literal;
+O169 -- rdfs:comment -->O171["Generally, some form of graphical presentation as a<br/>standalone graph or part of a digital system@en"]
+
+O172("ngi:NG1171­-OS8-­GC-P01")
+class O172 oPID;
+O7 -- crm:P106.is composed of -->O172["ngi:NG1171­-OS8-­GC-P01"]
+
+O173("crm:E73.Informational Object-40")
+class O173 crm;
+O172 -- crm:P2.has type -->O173["crm:E73.Informational Object"]
+
+O174("ngo:00A-00E4-0000")
+class O174 oPID;
+click O174 "http://data.ng-london.org.uk/resource/00A-00E4-0000" "Tooltip"
+O172 -- crm:P2.has type -->O174["ngo:00A-00E4-0000"]
+
+O175("Palmitate peak@en")
+class O175 literal;
+O174 -- rdfs:label -->O175["Palmitate peak@en"]
+
+O176("_Blank Node-N32")
+class O176 thing;
+
+O177("crm:E54.Dimension-41")
+class O177 crm;
+O176 -- crm:P2.has type -->O177["crm:E54.Dimension"]
+
+O178("wd:Q2675808")
+class O178 type;
+click O178 "https://www.wikidata.org/wiki/Q2675808" "Tooltip"
+O176 -- crm:P2.has type -->O178["wd:Q2675808"]
+O176 -- crm:P2.has type -->O86["ngo:00A-00DW-0000"]
+O172 -- crm:P43.has dimension -->O176["_Blank Node-N32"]
+
+O179("11.1#xsd:float")
+class O179 literal;
+O176 -- crm:P90.has value -->O179["11.1#xsd:float"]
+O176 -- crm:P91.has unit -->O166["aat:300379240"]
+
+O180("_Blank Node-N33")
+class O180 thing;
+
+O181("crm:E54.Dimension-42")
+class O181 crm;
+O180 -- crm:P2.has type -->O181["crm:E54.Dimension"]
+O176 -- owl:sameAs -->O180["_Blank Node-N33"]
+
+O182("ngi:NG1171­-OS8-­GC-DP0001")
+class O182 oPID;
+O182 -- crm:P43.has dimension -->O180["_Blank Node-N33"]
+
+O183("retention time@en")
+class O183 literal;
+O178 -- rdfs:label -->O183["retention time@en"]
+
+O184("ngi:NG1171­-OS8-­GC-C01")
+class O184 oPID;
+O172 -- crm:P138.is composed of -->O184["ngi:NG1171­-OS8-­GC-C01"]
+
+O185("crm:E73.Informational Object-43")
+class O185 crm;
+O184 -- crm:P2.has type -->O185["crm:E73.Informational Object"]
+
+O186("ngo:00A-00E1-0000")
+class O186 oPID;
+click O186 "http://data.ng-london.org.uk/resource/00A-00E1-0000" "Tooltip"
+O184 -- crm:P2.has type -->O186["ngo:00A-00E1-0000"]
+
+O187("Mass spectral data@en")
+class O187 literal;
+O186 -- rdfs:label -->O187["Mass spectral data@en"]
+
+O188("_Blank Node-N34")
+class O188 thing;
+
+O189("crm:E54.Dimension-44")
+class O189 crm;
+O188 -- crm:P2.has type -->O189["crm:E54.Dimension"]
+
+O190("ngo:00A-00E2-0000")
+class O190 oPID;
+click O190 "http://data.ng-london.org.uk/resource/00A-00E2-0000" "Tooltip"
+O188 -- crm:P2.has type -->O190["ngo:00A-00E2-0000"]
+O184 -- crm:P43.has dimension -->O188["_Blank Node-N34"]
+
+O191("270#xsd:decimal")
+class O191 literal;
+O188 -- crm:P90.has value -->O191["270#xsd:decimal"]
+
+O192("wd:Q874659")
+class O192 type;
+click O192 "https://www.wikidata.org/wiki/Q874659" "Tooltip"
+O188 -- crm:P91.has unit -->O192["wd:Q874659"]
+
+O193("_Blank Node-N35")
+class O193 thing;
+
+O194("crm:E57.Material-45")
+class O194 crm;
+O193 -- crm:P2.has type -->O194["crm:E57.Material"]
+
+O195("wd:Q11173")
+class O195 type;
+click O195 "https://www.wikidata.org/wiki/Q11173" "Tooltip"
+O193 -- crm:P2.has type -->O195["wd:Q11173"]
+
+O196("wd:Q16676086")
+class O196 type;
+click O196 "https://www.wikidata.org/wiki/Q16676086" "Tooltip"
+O193 -- crm:P45.consists of -->O196["wd:Q16676086"]
+O184 -- crm:P67.refers to -->O193["_Blank Node-N35"]
+
+O197("methyl palmitate@en")
+class O197 literal;
+O196 -- rdfs:label -->O197["methyl palmitate@en"]
+
+O198("chemical compound@en")
+class O198 literal;
+O195 -- rdfs:label -->O198["chemical compound@en"]
+
+O199("Mass-to-charge ratio@en")
+class O199 literal;
+O192 -- rdfs:label -->O199["Mass-to-charge ratio@en"]
+
+O200("molecular ion mass@en")
+class O200 literal;
+O190 -- rdfs:label -->O200["molecular ion mass@en"]
+O7 -- crm:P106.is composed of -->O182["ngi:NG1171­-OS8-­GC-DP0001"]
+
+O201("crm:E73.Informational Object-46")
+class O201 crm;
+O182 -- crm:P2.has type -->O201["crm:E73.Informational Object"]
+
+O202("wd:Q5227327")
+class O202 type;
+click O202 "https://www.wikidata.org/wiki/Q5227327" "Tooltip"
+O182 -- crm:P2.has type -->O202["wd:Q5227327"]
+
+O203("data point@en")
+class O203 literal;
+O202 -- rdfs:label -->O203["data point@en"]
+O86 -- rdfs:label -->O105["X Dimension@en"]
+
+O204("ngo:00A-00DY-0000")
+class O204 oPID;
+click O204 "http://data.ng-london.org.uk/resource/00A-00DY-0000" "Tooltip"
+O204 -- rdfs:label -->O106["Y Dimension@en"]
+
+O205("ngo:00A-00E3-0000")
+class O205 oPID;
+click O205 "http://data.ng-london.org.uk/resource/00A-00E3-0000" "Tooltip"
+
+O206("Normalised ion count@en")
+class O206 literal;
+O205 -- rdfs:label -->O206["Normalised ion count@en"]
+
+O207("aat:300417377")
+class O207 type;
+click O207 "http://vocab.getty.edu/aat/300417377" "Tooltip"
+
+O208("percentage@en")
+class O208 literal;
+O207 -- rdfs:label -->O208["percentage@en"]
+
+O209("_Blank Node-N36")
+class O209 thing;
+
+O210("crm:E54.Dimension-47")
+class O210 crm;
+O209 -- crm:P2.has type -->O210["crm:E54.Dimension"]
+O209 -- crm:P2.has type -->O205["ngo:00A-00E3-0000"]
+O209 -- crm:P2.has type -->O204["ngo:00A-00DY-0000"]
+O182 -- crm:P43.has dimension -->O209["_Blank Node-N36"]
+
+O211("100#xsd:decimal")
+class O211 literal;
+O209 -- crm:P90.has value -->O211["100#xsd:decimal"]
+O209 -- crm:P91.has unit -->O207["aat:300417377"]
+
+O212("_Blank Node-N37")
+class O212 event;
+
+O213("crm:E9.Event-48")
+class O213 crm;
+O212 -- crm:P2.has type -->O213["crm:E9.Event"]
+
+O214("Type PID")
+class O214 oPID;
+O212 -- crm:P2.has type -->O214["Type PID"]
+
+O215("Material PID")
+class O215 oPID;
+O212 -- crm:P126.employed -->O215["Material PID"]
+
+O216("crm:E57.Material-49")
+class O216 crm;
+O215 -- crm:P2.has type -->O216["crm:E57.Material"]
+
+O217("Method PID")
+class O217 oPID;
+O212 -- crm:P33.used specific technique -->O217["Method PID"]
+
+O218("crm:E55.Type-50")
+class O218 crm;
+O217 -- crm:P2.has type -->O218["crm:E55.Type"]
+
+O219("Location PID")
+class O219 oPID;
+O212 -- crm:P7.took place at -->O219["Location PID"]
+
+O220("crm:E53.Place-51")
+class O220 crm;
+O219 -- crm:P2.has type -->O220["crm:E53.Place"]
+
+O221("Object PID")
+class O221 oPID;
+O212 -- crm:P25.moved -->O221["Object PID"]
+O212 -- crm:P31.modified -->O221["Object PID"]
+O212 -- crm:P34.concerned -->O221["Object PID"]
+
+O222("crm:E22.Man-Made Object-52")
+class O222 crm;
+O221 -- crm:P2.has type -->O222["crm:E22.Man-Made Object"]
+
+O223("Different events will have individual descriptions and different types of events will have different additional relationships or links to external resources@en")
+class O223 literal;
+O212 -- rdfs:comment -->O223["Different events will have individual descriptions and<br/>different types of events will have different additional<br/>relationships or links to external resources@en"]
+
+O224("_Blank Node-N38")
+class O224 aPID;
+
+O225("crm:E39.Actor-53")
+class O225 crm;
+O224 -- crm:P2.has type -->O225["crm:E39.Actor"]
+O212 -- crm.P14.carried out by -->O224["_Blank Node-N38"]
+O212 -- crm.P12.occured in the presence of -->O224["_Blank Node-N38"]
+O212 -- crm.P15.was influenced by -->O224["_Blank Node-N38"]
+
+O226("An event in the life of an object can involve a range of people or groups in different roles@en")
+class O226 literal;
+O224 -- rdfs:comment -->O226["An event in the life of an object can involve a range of<br/>people or groups in different roles@en"]
+
+O227("_Blank Node-N39")
+class O227 thing;
+
+O228("crm:E31.Document-54")
+class O228 crm;
+O227 -- crm:P2.has type -->O228["crm:E31.Document"]
+O212 -- crm.P70.is documented in -->O227["_Blank Node-N39"]
+
+O229("This allows a link to stand-alone and/or legacy reports, publications, databases, etc.@en")
+class O229 literal;
+O227 -- rdfs:comment -->O229["This allows a link to stand-alone and/or legacy reports,<br/>publications, databases, etc.@en"]
+
+O230("_Blank Node-N40")
+class O230 thing;
+
+O231("crm:E1.CRM Entity-55")
+class O231 crm;
+O230 -- crm:P2.has type -->O231["crm:E1.CRM Entity"]
+O212 -- rdfs:seeAlso -->O230["_Blank Node-N40"]
+
+O232("Different events can link to various other things.@en")
+class O232 literal;
+O230 -- rdfs:comment -->O232["Different events can link to various other things.@en"]
+
+O233("_Blank Node-N41")
+class O233 thing;
+
+O234("crm:E52.Time-span-56")
+class O234 crm;
+O233 -- crm:P2.has type -->O234["crm:E52.Time-span"]
+O212 -- crm:P4.has time span -->O233["_Blank Node-N41"]
+
+O235("Time spans can be any period of time, with a start and a finish date Degrees of confidence also need to be established.@en")
+class O235 literal;
+O233 -- rdfs:comment -->O235["Time spans can be any period of time, with a start and a<br/>finish date Degrees of confidence also need to be<br/>established.@en"]
+
+O236("_Blank Node-N42")
+class O236 event;
+
+O237("crm:E16.Measurement-57")
+class O237 crm;
+O236 -- crm:P2.has type -->O237["crm:E16.Measurement"]
+
+O238("aat:300379861")
+class O238 type;
+click O238 "http://vocab.getty.edu/aat/300379861" "Tooltip"
+O236 -- crm:P2.has type -->O238["aat:300379861"]
+
+O239("aat:300419323")
+class O239 type;
+click O239 "http://vocab.getty.edu/aat/300419323" "Tooltip"
+O236 -- crm:P32.used general technique -->O239["aat:300419323"]
+
+O240("wd:Q72367323")
+class O240 type;
+click O240 "https://www.wikidata.org/wiki/Q72367323" "Tooltip"
+O236 -- crm:P125.used object of type -->O240["wd:Q72367323"]
+
+O241("ng:N-1171-00-000053")
+class O241 oPID;
+O236 -- crm:P108.has produced -->O241["ng:N-1171-00-000053"]
+O236 -- crm:P14.carried out by -->O8["ngo:00D-0002-0000"]
+O236 -- crm:P39.measured -->O69["ng:0FJS-0001-0000-0000"]
+
+O242("ngo:00D-0001-0000")
+class O242 oPID;
+click O242 "http://data.ng-london.org.uk/resource/00D-0001-0000" "Tooltip"
+O236 -- crm:P70.is documented in -->O242["ngo:00D-0001-0000"]
+
+O243("crm:E22.Man-Made Object-58")
+class O243 crm;
+O69 -- crm:P2.has type -->O243["crm:E22.Man-Made Object"]
+
+O244("ng:N-1171-00-000055")
+class O244 oPID;
+O69 -- crm:P138.has representation -->O244["ng:N-1171-00-000055"]
+
+O245("crm:E31.Document-59")
+class O245 crm;
+O242 -- crm:P2.has type -->O245["crm:E31.Document"]
+
+O246("National Gallery Collection Image Database@en")
+class O246 literal;
+O242 -- rdfs:label -->O246["National Gallery Collection Image Database@en"]
+
+O247("crm:E21.Person-60")
+class O247 crm;
+O8 -- crm:P2.has type -->O247["crm:E21.Person"]
+
+O248("aat:300025687")
+class O248 type;
+click O248 "http://vocab.getty.edu/aat/300025687" "Tooltip"
+O8 -- crm:P2.has type -->O248["aat:300025687"]
+O8 -- rdfs:label -->O43["Example NG Staff Member@en"]
+
+O249("photographers@en")
+class O249 literal;
+O248 -- rdfs:label -->O249["photographers@en"]
+
+O250("crm:E22.Man Made Object-61")
+class O250 crm;
+O241 -- crm:P2.has type -->O250["crm:E22.Man Made Object"]
+O241 -- crm:P2.has type -->O240["wd:Q72367323"]
+O241 -- crm:P65.shows visual item -->O244["ng:N-1171-00-000055"]
+
+O251("Free Text N-1171-00-000053 description@en")
+class O251 literal;
+O241 -- rdf:comment -->O251["Free Text N-1171-00-000053 description@en"]
+O241 -- crm:P70.is documented in -->O242["ngo:00D-0001-0000"]
+
+O252("_Blank Node-N43")
+class O252 thing;
+
+O253("crm:E54.Dimension-62")
+class O253 crm;
+O252 -- crm:P2.has type -->O253["crm:E54.Dimension"]
+O252 -- crm:P2.has type -->O95["aat:300055647"]
+O241 -- crm:P43.has dimension -->O252["_Blank Node-N43"]
+
+O254("30#xsd:decimal")
+class O254 literal;
+O252 -- crm:P90.has value -->O254["30#xsd:decimal"]
+
+O255("aat:300379098")
+class O255 type;
+click O255 "http://vocab.getty.edu/aat/300379098" "Tooltip"
+O252 -- crm:P91.has unit -->O255["aat:300379098"]
+
+O256("_Blank Node-N44")
+class O256 thing;
+
+O257("crm:E54.Dimension-63")
+class O257 crm;
+O256 -- crm:P2.has type -->O257["crm:E54.Dimension"]
+O256 -- crm:P2.has type -->O99["aat:300055644"]
+O241 -- crm:P43.has dimension -->O256["_Blank Node-N44"]
+
+O258("40#xsd:decimal")
+class O258 literal;
+O256 -- crm:P90.has value -->O258["40#xsd:decimal"]
+O256 -- crm:P91.has unit -->O255["aat:300379098"]
+
+O259("_Blank Node-N45")
+class O259 thing;
+
+O260("crm:E42.Identifier-64")
+class O260 crm;
+O259 -- crm:P2.has type -->O260["crm:E42.Identifier"]
+
+O261("aat:300404621")
+class O261 type;
+click O261 "http://vocab.getty.edu/aat/300404621" "Tooltip"
+O259 -- crm:P2.has type -->O261["aat:300404621"]
+O241 -- crm:P131.is identified by -->O259["_Blank Node-N45"]
+
+O262("N-1171-00-000053@en")
+class O262 literal;
+O259 -- rdfs:label -->O262["N-1171-00-000053@en"]
+
+O263("_Blank Node-N46")
+class O263 thing;
+
+O264("crm:E42.Identifier-65")
+class O264 crm;
+O263 -- crm:P2.has type -->O264["crm:E42.Identifier"]
+O263 -- crm:P2.has type -->O261["aat:300404621"]
+O244 -- crm:P131.is identified by -->O263["_Blank Node-N46"]
+
+O265("N-1171-00-000055@en")
+class O265 literal;
+O263 -- rdfs:label -->O265["N-1171-00-000055@en"]
+
+O266("crm:E36.Visual Item-66")
+class O266 crm;
+O244 -- crm:P2.has type -->O266["crm:E36.Visual Item"]
+
+O267("aat:300419325")
+class O267 type;
+click O267 "http://vocab.getty.edu/aat/300419325" "Tooltip"
+O244 -- crm:P2.has type -->O267["aat:300419325"]
+
+O268("aat:300215302")
+class O268 type;
+click O268 "http://vocab.getty.edu/aat/300215302" "Tooltip"
+O244 -- crm:P2.has type -->O268["aat:300215302"]
+
+O269("Free Text N-1171-00-000055 description@en")
+class O269 literal;
+O244 -- rdf:comment -->O269["Free Text N-1171-00-000055 description@en"]
+O244 -- crm:P138.represents -->O69["ng:0FJS-0001-0000-0000"]
+O244 -- crm:P70.is documented in -->O242["ngo:00D-0001-0000"]
+
+O270("_Blank Node-N47")
+class O270 thing;
+
+O271("crm:E42.Identifier-67")
+class O271 crm;
+O270 -- crm:P2.has type -->O271["crm:E42.Identifier"]
+
+O272("wd:Q1144928")
+class O272 type;
+click O272 "https://www.wikidata.org/wiki/Q1144928" "Tooltip"
+O270 -- crm:P2.has type -->O272["wd:Q1144928"]
+O244 -- crm:P131.is identified by -->O270["_Blank Node-N47"]
+
+O273("N-1171-00-000052.tif@en")
+class O273 literal;
+O270 -- rdfs:label -->O273["N-1171-00-000052.tif@en"]
+
+O274("_Blank Node-N48")
+class O274 thing;
+
+O275("crm:E54.Dimension-68")
+class O275 crm;
+O274 -- crm:P2.has type -->O275["crm:E54.Dimension"]
+O274 -- crm:P2.has type -->O95["aat:300055647"]
+O244 -- crm:P43.has dimension -->O274["_Blank Node-N48"]
+
+O276("19230#xsd:decimal")
+class O276 literal;
+O274 -- crm:P90.has value -->O276["19230#xsd:decimal"]
+O274 -- crm:P91.has unit -->O88["aat:300266190"]
+
+O277("_Blank Node-N49")
+class O277 thing;
+
+O278("crm:E54.Dimension-69")
+class O278 crm;
+O277 -- crm:P2.has type -->O278["crm:E54.Dimension"]
+O277 -- crm:P2.has type -->O99["aat:300055644"]
+O244 -- crm:P43.has dimension -->O277["_Blank Node-N49"]
+
+O279("30275#xsd:decimal")
+class O279 literal;
+O277 -- crm:P90.has value -->O279["30275#xsd:decimal"]
+O277 -- crm:P91.has unit -->O88["aat:300266190"]
+O88 -- rdfs:label -->O107["pixels@en"]
+
+O280("centimeters@en")
+class O280 literal;
+O255 -- rdfs:label -->O280["centimeters@en"]
+O95 -- rdfs:label -->O103["width@en"]
+O99 -- rdfs:label -->O104["height@en"]
+
+O281("imaging (image making process)@en")
+class O281 literal;
+O238 -- rdfs:label -->O281["imaging (image making process)@en"]
+
+O282("x-radiography@en")
+class O282 literal;
+O239 -- rdfs:label -->O282["x-radiography@en"]
+
+O283("repository number@en")
+class O283 literal;
+O261 -- rdfs:label -->O283["repository number@en"]
+
+O284("filename@en")
+class O284 literal;
+O272 -- rdfs:label -->O284["filename@en"]
+
+O285("x-ray film@en")
+class O285 literal;
+O240 -- rdfs:label -->O285["x-ray film@en"]
+
+O286("digital images@en")
+class O286 literal;
+O268 -- rdfs:label -->O286["digital images@en"]
+
+O287("x-radiographs@en")
+class O287 literal;
+O267 -- rdfs:label -->O287["x-radiographs@en"]
+
+O288("aat:300404202")
+class O288 type;
+click O288 "http://vocab.getty.edu/aat/300404202" "Tooltip"
+
+O289("files (digital files)@en")
+class O289 literal;
+O288 -- rdfs:label -->O289["files (digital files)@en"]
+
+O290("_Blank Node-N50")
+class O290 event;
+
+O291("crm:E16.Measurement-70")
+class O291 crm;
+O290 -- crm:P2.has type -->O291["crm:E16.Measurement"]
+
+O292("aat:300053578")
+class O292 type;
+click O292 "http://vocab.getty.edu/aat/300053578" "Tooltip"
+O290 -- crm:P2.has type -->O292["aat:300053578"]
+
+O293("aat:300204852")
+class O293 type;
+click O293 "http://vocab.getty.edu/aat/300204852" "Tooltip"
+O290 -- crm:P16.used specific object -->O293["aat:300204852"]
+
+O294("ngi:M0002")
+class O294 oPID;
+O290 -- crm:P33.used specific technique -->O294["ngi:M0002"]
+
+O295("wd:Q3485549")
+class O295 type;
+click O295 "https://www.wikidata.org/wiki/Q3485549" "Tooltip"
+O290 -- crm:P32.used general technique -->O295["wd:Q3485549"]
+
+O296("_Blank Node-N51")
+class O296 thing;
+
+O297("crm:E54.Dimension-71")
+class O297 crm;
+O296 -- crm:P2.has type -->O297["crm:E54.Dimension"]
+O296 -- crm:P2.has type -->O95["aat:300055647"]
+O290 -- crm:P40.observed dimension -->O296["_Blank Node-N51"]
+O69 -- crm:P43.has dimension -->O296["_Blank Node-N51"]
+
+O298("216.8#xsd:float")
+class O298 literal;
+O296 -- crm:P90.has value -->O298["216.8#xsd:float"]
+O296 -- crm:P91.has unit -->O255["aat:300379098"]
+
+O299("NG Painting measurement method@en")
+class O299 literal;
+O294 -- rdfs:label -->O299["NG Painting measurement method@en"]
+
+O300("crm:E29.Design or Procedure-72")
+class O300 crm;
+O294 -- crm:P2.has type -->O300["crm:E29.Design or Procedure"]
+
+O301("manual work@en")
+class O301 literal;
+O295 -- rdfs:label -->O301["manual work@en"]
+
+O302("tape measure@en")
+class O302 literal;
+O293 -- rdfs:label -->O302["tape measure@en"]
+
+O303("measuring@en")
+class O303 literal;
+O292 -- rdfs:label -->O303["measuring@en"]
+O95 -- rdfs:label -->O103["width@en"]
+O255 -- rdfs:label -->O280["centimeters@en"]
+
+O304("crm:E22.Man-Made Object-73")
+class O304 crm;
+O69 -- crm:P2.has type -->O304["crm:E22.Man-Made Object"]
+
+O305("ngo:001-02VZ-0000")
+class O305 oPID;
+click O305 "http://data.ng-london.org.uk/resource/001-02VZ-0000" "Tooltip"
+O69 -- crm:P46.forms part of -->O305["ngo:001-02VZ-0000"]
+
+O306("crm:E78.Curated Holding-74")
+class O306 crm;
+O305 -- crm:P2.has type -->O306["crm:E78.Curated Holding"]
+
+O307("The National Gallery Collection (London)@en")
+class O307 literal;
+O305 -- rdfs:label -->O307["The National Gallery Collection (London)@en"]
+
+O308("ng:Event PID")
+class O308 ePID;
+
+O309("crm:E5.Event-75")
+class O309 crm;
+O308 -- crm:P2.has type -->O309["crm:E5.Event"]
+O69 -- crm:P12.was present at -->O308["ng:Event PID"]
+
+O310("_Blank Node-N52")
+class O310 thing;
+
+O311("crm:E42.Identifier-76")
+class O311 crm;
+O310 -- crm:P2.has type -->O311["crm:E42.Identifier"]
+
+O312("aat:300312355")
+class O312 type;
+click O312 "http://vocab.getty.edu/aat/300312355" "Tooltip"
+O310 -- crm:P2.has type -->O312["aat:300312355"]
+O69 -- crm:P48.has preferred identifier -->O310["_Blank Node-N52"]
+
+O313("NG1171@en")
+class O313 literal;
+O310 -- rdfs:label -->O313["NG1171@en"]
+
+O314("accession numbers@en")
+class O314 literal;
+O312 -- rdfs:label -->O314["accession numbers@en"]
+
+O315("ngo:00C-02FT-0000")
+class O315 oPID;
+click O315 "http://data.ng-london.org.uk/resource/00C-02FT-0000" "Tooltip"
+
+O316("crm:E35.Title-77")
+class O316 crm;
+O315 -- crm:P2.has type -->O316["crm:E35.Title"]
+
+O317("aat:300417208")
+class O317 type;
+click O317 "http://vocab.getty.edu/aat/300417208" "Tooltip"
+O315 -- crm:P2.has type -->O317["aat:300417208"]
+
+O318("The Ansidei Madonna@en")
+class O318 literal;
+O315 -- rdfs:label -->O318["The Ansidei Madonna@en"]
+O69 -- crm:P102.has title -->O315["ngo:00C-02FT-0000"]
+
+O319("brief titles@en")
+class O319 literal;
+O317 -- rdfs:label -->O319["brief titles@en"]
+
+O320("crm:E12.Production-78")
+class O320 crm;
+O120 -- crm:P2.has type -->O320["crm:E12.Production"]
+O69 -- crm:P108.was produced by -->O120["ngo:002-0432-0000"]
+
+O321("Raphael painted this altarpiece for the Ansidei family chapel dedicated to Saint Nicholas in the Servite Church of S. Fiorenzo in Perugia. The date MDV (1505) is inscribed in gold on the ...@en")
+class O321 literal;
+O69 -- rdfs:comment -->O321["Raphael painted this altarpiece for the Ansidei family<br/>chapel dedicated to Saint Nicholas in the Servite Church of<br/>S. Fiorenzo in Perugia. The date MDV (1505) is inscribed in<br/>gold on the ...@en"]
+
+O322("aat:300033799")
+class O322 type;
+click O322 "http://vocab.getty.edu/aat/300033799" "Tooltip"
+O69 -- crm:P2.has type -->O322["aat:300033799"]
+
+O323("oil paintings (visual works)@en")
+class O323 literal;
+O322 -- rdfs:label -->O323["oil paintings (visual works)@en"]
+
+O324("aat:300234093")
+class O324 type;
+click O324 "http://vocab.getty.edu/aat/300234093" "Tooltip"
+O69 -- crm:P2.has type -->O324["aat:300234093"]
+
+O325("religious visual works@en")
+class O325 literal;
+O324 -- rdfs:label -->O325["religious visual works@en"]
+
+O326("aat:300033656")
+class O326 type;
+click O326 "http://vocab.getty.edu/aat/300033656" "Tooltip"
+O69 -- crm:P2.has type -->O326["aat:300033656"]
+
+O327("panel paintings (paintings by form)@en")
+class O327 literal;
+O326 -- rdfs:label -->O327["panel paintings (paintings by form)@en"]
+
+O328("_Blank Node-N53")
+class O328 thing;
+
+O329("crm:E31.Document-79")
+class O329 crm;
+O328 -- crm:P2.has type -->O329["crm:E31.Document"]
+O69 -- crm:P70.is documented in -->O328["_Blank Node-N53"]
+O328 -- owl:sameAs -->O157["https://cima.ng-london.org.uk/documentation/files/2009/10/01<br/>/Raphael%20Catalogue%20Complete.pdf"]
+O328 -- rdfs:seeAlso -->O158["https://www.book-info.com/isbn/1-85709-999-0.htm"]
+O328 -- rdfs:label -->O159["Raphael: From Urbino to Rome@en"]
+
+O330("_Blank Node-N54")
+class O330 thing;
+
+O331("crm:E31.Document-80")
+class O331 crm;
+O330 -- crm:P2.has type -->O331["crm:E31.Document"]
+O69 -- crm:P70.is documented in -->O330["_Blank Node-N54"]
+
+O332("This allows additional links to standalone and/or legacy reports, publications, databases, etc.@en")
+class O332 literal;
+O330 -- note -->O332["This allows additional links to standalone and/or legacy<br/>reports, publications, databases, etc.@en"]
+
+O333("_Blank Node-N55")
+class O333 thing;
+
+O334("crm:E54.Dimension-81")
+class O334 crm;
+O333 -- crm:P2.has type -->O334["crm:E54.Dimension"]
+O333 -- crm:P2.has type -->O95["aat:300055647"]
+O69 -- crm:P43.has dimension -->O333["_Blank Node-N55"]
+
+O335("147.6#xsd:float")
+class O335 literal;
+O333 -- crm:P90.has value -->O335["147.6#xsd:float"]
+O333 -- crm:P91.has unit -->O255["aat:300379098"]
+
+O336("_Blank Node-N56")
+class O336 thing;
+
+O337("crm:E54.Dimension-82")
+class O337 crm;
+O336 -- crm:P2.has type -->O337["crm:E54.Dimension"]
+O336 -- crm:P2.has type -->O99["aat:300055644"]
+O69 -- crm:P43.has dimension -->O336["_Blank Node-N56"]
+O336 -- crm:P90.has value -->O298["216.8#xsd:float"]
+O336 -- crm:P91.has unit -->O255["aat:300379098"]
+O95 -- rdfs:label -->O103["width@en"]
+O99 -- rdfs:label -->O104["height@en"]
+O255 -- rdfs:label -->O280["centimeters@en"]
+
+O338("_Blank Node-N57")
+class O338 thing;
+
+O339("crm:E57.Material-83")
+class O339 crm;
+O338 -- crm:P2.has type -->O339["crm:E57.Material"]
+O338 -- crm:P2.has type -->O56["aat:300163343"]
+O69 -- crm:P46.is composed of -->O338["_Blank Node-N57"]
+
+O340("aat:300015050")
+class O340 type;
+click O340 "http://vocab.getty.edu/aat/300015050" "Tooltip"
+O338 -- crm:P45.consists of -->O340["aat:300015050"]
+
+O341("_Blank Node-N58")
+class O341 thing;
+
+O342("crm:E57.Material-84")
+class O342 crm;
+O341 -- crm:P2.has type -->O342["crm:E57.Material"]
+
+O343("aat:300014844")
+class O343 type;
+click O343 "http://vocab.getty.edu/aat/300014844" "Tooltip"
+O341 -- crm:P2.has type -->O343["aat:300014844"]
+O69 -- crm:P46.is composed of -->O341["_Blank Node-N58"]
+
+O344("aat:300012363")
+class O344 type;
+click O344 "http://vocab.getty.edu/aat/300012363" "Tooltip"
+O341 -- crm:P45.consists of -->O344["aat:300012363"]
+
+O345("media (artists' material)@en")
+class O345 literal;
+O56 -- rdfs:label -->O345["media (artists' material)@en"]
+
+O346("medium: oil paint (paint)@en")
+class O346 literal;
+O340 -- rdfs:label -->O346["medium: oil paint (paint)@en"]
+
+O347("supports (artists' materials)@en")
+class O347 literal;
+O343 -- rdfs:label -->O347["supports (artists' materials)@en"]
+
+O348("support: poplar (wood)@en")
+class O348 literal;
+O344 -- rdfs:label -->O348["support: poplar (wood)@en"]
+
+O349("_Blank Node-N59")
+class O349 thing;
+
+O350("crm:E1.CRM Entity-85")
+class O350 crm;
+O349 -- crm:P2.has type -->O350["crm:E1.CRM Entity"]
+O69 -- rdfs:seeAlso -->O349["_Blank Node-N59"]
+
+O351("Different types of objects will have different additional properties and links to external resources.@en")
+class O351 literal;
+O349 -- rdfs:comment -->O351["Different types of objects will have different additional<br/>properties and links to external resources.@en"]
+
+O352("crm:E12.Production-86")
+class O352 crm;
+O120 -- crm:P2.has type -->O352["crm:E12.Production"]
+
+O353("aat:300404387")
+class O353 type;
+click O353 "http://vocab.getty.edu/aat/300404387" "Tooltip"
+O120 -- crm:P2.has type -->O353["aat:300404387"]
+
+O354("creating (artistic activity)@en")
+class O354 literal;
+O353 -- rdf:label -->O354["creating (artistic activity)@en"]
+O120 -- rdfs:comment -->O119["Free Text@en"]
+O120 -- crm:P108.has produced -->O69["ng:0FJS-0001-0000-0000"]
+
+O355("crm:E22.Man-Made Object-87")
+class O355 crm;
+O69 -- crm:P2.has type -->O355["crm:E22.Man-Made Object"]
+
+O356("_Blank Node-N60")
+class O356 thing;
+
+O357("crm:E53.Place-88")
+class O357 crm;
+O356 -- crm:P2.has type -->O357["crm:E53.Place"]
+
+O358("tgn:7000526")
+class O358 type;
+click O358 "http://vocab.getty.edu/tgn/7000526" "Tooltip"
+O356 -- owl:sameAs -->O358["tgn:7000526"]
+O120 -- crm:P7.took place at -->O356["_Blank Node-N60"]
+
+O359("Perugia (inhabited place)@en")
+class O359 literal;
+O358 -- rdf:label -->O359["Perugia (inhabited place)@en"]
+
+O360("_Blank Node-N61")
+class O360 thing;
+
+O361("crm:E55.type-89")
+class O361 crm;
+O360 -- crm:P2.has type -->O361["crm:E55.type"]
+
+O362("aat:300178684")
+class O362 type;
+click O362 "http://vocab.getty.edu/aat/300178684" "Tooltip"
+O360 -- crm:P2.has type -->O362["aat:300178684"]
+O120 -- crm:P32.used general technique -->O360["_Blank Node-N61"]
+
+O363("oil painting (technique)@en")
+class O363 literal;
+O362 -- rdf:label -->O363["oil painting (technique)@en"]
+
+O364("_Blank Node-N62")
+class O364 thing;
+
+O365("crm:E1.CRM Entity-90")
+class O365 crm;
+O364 -- crm:P2.has type -->O365["crm:E1.CRM Entity"]
+O120 -- rdfs:seeAlso -->O364["_Blank Node-N62"]
+
+O366("Further connections could be made to other related objects, people or events.@en")
+class O366 literal;
+O364 -- rdfs:comment -->O366["Further connections could be made to other related objects,<br/>people or events.@en"]
+
+O367("_Blank Node-N63")
+class O367 thing;
+
+O368("crm:E57.Material-91")
+class O368 crm;
+O367 -- crm:P2.has type -->O368["crm:E57.Material"]
+O367 -- rdfs:sameAs -->O340["aat:300015050"]
+O120 -- crm:P126.employed -->O367["_Blank Node-N63"]
+
+O369("oil paint (paint)@en")
+class O369 literal;
+O340 -- rdfs:label -->O369["oil paint (paint)@en"]
+
+O370("_Blank Node-N64")
+class O370 thing;
+
+O371("crm:E74.Group-92")
+class O371 crm;
+O370 -- crm:P2.has type -->O371["crm:E74.Group"]
+O370 -- rdfs:sameAs -->O125["aat:300107304"]
+O120 -- crm:P15.was influenced by -->O370["_Blank Node-N64"]
+O125 -- rdfs:label -->O126["Ancient Italian@en"]
+
+O372("ng:0QCD-0001-0000-0000")
+class O372 aPID;
+click O372 "http://data.ng-london.org.uk/0QCD-0001-0000-0000" "Tooltip"
+O120 -- crm:P14.carried out by -->O372["ng:0QCD-0001-0000-0000"]
+
+O373("crm:E21.Person-93")
+class O373 crm;
+O372 -- crm:P2.has type -->O373["crm:E21.Person"]
+
+O374("_Blank Node-N65")
+class O374 thing;
+
+O375("crm:E31.Document-94")
+class O375 crm;
+O374 -- crm:P2.has type -->O375["crm:E31.Document"]
+O120 -- crm:P70.is documented in -->O374["_Blank Node-N65"]
+O374 -- note -->O76["This allows additional links to stand-alone and/or legacy<br/>reports, publications, databases, etc.@en"]
+
+O376("_Blank Node-N66")
+class O376 thing;
+
+O377("crm:E31.Document-95")
+class O377 crm;
+O376 -- crm:P2.has type -->O377["crm:E31.Document"]
+O376 -- owl:sameAs -->O157["https://cima.ng-london.org.uk/documentation/files/2009/10/01<br/>/Raphael%20Catalogue%20Complete.pdf"]
+O376 -- rdfs:label -->O159["Raphael: From Urbino to Rome@en"]
+O376 -- rdfs:seeAlso -->O158["https://www.book-info.com/isbn/1-85709-999-0.htm"]
+O120 -- crm:P70.is documented in -->O376["_Blank Node-N66"]
+
+O378("_Blank Node-N67")
+class O378 thing;
+
+O379("crm:E52.Time-span-96")
+class O379 crm;
+O378 -- crm:P2.has type -->O379["crm:E52.Time-span"]
+O378 -- crm:P2.has type -->O136["aat:300379244"]
+
+O380("1505-01-01 #xsd:dateTime")
+class O380 literal;
+O378 -- crm:P82a.begin of the begin -->O380["1505-01-01 #xsd:dateTime"]
+
+O381("1505-12-31 #xsd:dateTime")
+class O381 literal;
+O378 -- crm:P82a.end of the end -->O381["1505-12-31 #xsd:dateTime"]
+
+O382("1505@en")
+class O382 literal;
+O378 -- rdfs:label -->O382["1505@en"]
+
+O383("wd:Q6153")
+class O383 type;
+click O383 "https://www.wikidata.org/wiki/Q6153" "Tooltip"
+O378 -- owl:sameAs -->O383["wd:Q6153"]
+O120 -- crm:P4.has time span -->O378["_Blank Node-N67"]
+O136 -- rdfs:label -->O137["years@en"]
+
+O384("_Blank Node-N68")
+class O384 event;
+
+O385("crm:E80.Part Removal-97")
+class O385 crm;
+O384 -- crm:P2.has type -->O385["crm:E80.Part Removal"]
+O384 -- crm:P14.carried out by -->O8["ngo:00D-0002-0000"]
+
+O386("ngi:NG1171-IS31")
+class O386 oPID;
+O384 -- crm:P113.removed -->O386["ngi:NG1171-IS31"]
+
+O387("ngi:N-1171-00-000052-S01")
+class O387 oPID;
+O384 -- crm:P7.took place at -->O387["ngi:N-1171-00-000052-S01"]
+O384 -- crm:P112.diminished -->O69["ng:0FJS-0001-0000-0000"]
+
+O388("_Blank Node-N69")
+class O388 thing;
+
+O389("crm:E31.Document-98")
+class O389 crm;
+O388 -- crm:P2.has type -->O389["crm:E31.Document"]
+
+O390("wd:Q1710397")
+class O390 type;
+click O390 "https://www.wikidata.org/wiki/Q1710397" "Tooltip"
+O388 -- crm:P2.has type -->O390["wd:Q1710397"]
+O384 -- crm:P70.is documented in -->O388["_Blank Node-N69"]
+
+O391("Actual textual content detailing the reason or purpose of the annotation.@en")
+class O391 literal;
+O388 -- rdfs:comment -->O391["Actual textual content detailing the reason or purpose of<br/>the annotation.@en"]
+
+O392("_Blank Node-N70")
+class O392 thing;
+
+O393("crm:E52.Time-span-99")
+class O393 crm;
+O392 -- crm:P2.has type -->O393["crm:E52.Time-span"]
+
+O394("wd:Q205892")
+class O394 type;
+click O394 "https://www.wikidata.org/wiki/Q205892" "Tooltip"
+O392 -- crm:P2.has type -->O394["wd:Q205892"]
+O384 -- crm:P4.has time span -->O392["_Blank Node-N70"]
+
+O395("2001-02-13 00:00 #xsd:dateTime")
+class O395 literal;
+O392 -- crm:P82a.begin of the begin -->O395["2001-02-13 00:00 #xsd:dateTime"]
+
+O396("2001-02-13 24:00 #xsd:dateTime")
+class O396 literal;
+O392 -- crm:P82a.end of the end -->O396["2001-02-13 24:00 #xsd:dateTime"]
+
+O397("2001-02-13@en")
+class O397 literal;
+O392 -- rdfs:label -->O397["2001-02-13@en"]
+
+O398("crm:E22.Man-Made Object-100")
+class O398 crm;
+O69 -- crm:P2.has type -->O398["crm:E22.Man-Made Object"]
+O69 -- crm:P59.has section -->O387["ngi:N-1171-00-000052-S01"]
+
+O399("ngi:N-1171-00-000052")
+class O399 oPID;
+O69 -- crm:P138.has representation -->O399["ngi:N-1171-00-000052"]
+
+O400("crm:E36.Visual Item-101")
+class O400 crm;
+O399 -- crm:P2.has type -->O400["crm:E36.Visual Item"]
+
+O401("_Blank Node-N71")
+class O401 thing;
+
+O402("crm:E36.Visual Item-102")
+class O402 crm;
+O401 -- crm:P2.has type -->O402["crm:E36.Visual Item"]
+O401 -- crm:P2.has type -->O72["ngo:00A-00E0-0000"]
+O399 -- crm:P148.has component -->O401["_Blank Node-N71"]
+O387 -- crm:P138.has representation -->O401["_Blank Node-N71"]
+
+O403("_Blank Node-N72")
+class O403 thing;
+
+O404("crm:E41.Appellation-103")
+class O404 crm;
+O403 -- crm:P2.has type -->O404["crm:E41.Appellation"]
+O403 -- crm:P2.has type -->O79["aat:300248475"]
+O401 -- crm:P1.is identified by -->O403["_Blank Node-N72"]
+O387 -- crm:P1.is identified by -->O403["_Blank Node-N72"]
+
+O405("_Blank Node-N73")
+class O405 thing;
+
+O406("crm:E54.Dimension-104")
+class O406 crm;
+O405 -- crm:P2.has type -->O406["crm:E54.Dimension"]
+O405 -- crm:P2.has type -->O86["ngo:00A-00DW-0000"]
+O403 -- crm:P43.has dimension -->O405["_Blank Node-N73"]
+O405 -- crm:P90.has value -->O87["170#xsd:decimal"]
+O405 -- crm:P91.has unit -->O88["aat:300266190"]
+
+O407("_Blank Node-N74")
+class O407 thing;
+
+O408("crm:E54.Dimension-105")
+class O408 crm;
+O407 -- crm:P2.has type -->O408["crm:E54.Dimension"]
+O407 -- crm:P2.has type -->O91["ngo:00A-00DX-0000"]
+O403 -- crm:P43.has dimension -->O407["_Blank Node-N74"]
+O407 -- crm:P90.has value -->O92["6239#xsd:decimal"]
+O407 -- crm:P91.has unit -->O88["aat:300266190"]
+
+O409("_Blank Node-N75")
+class O409 thing;
+
+O410("crm:E31.Document-106")
+class O410 crm;
+O409 -- crm:P2.has type -->O410["crm:E31.Document"]
+O409 -- crm:P2.has type -->O82["aat:300026100"]
+O403 -- crm:P70.is documented in -->O409["_Blank Node-N75"]
+O409 -- rdfs:comment -->O83["Actual html content of the annotation@en"]
+
+O411("_Blank Node-N76")
+class O411 thing;
+
+O412("crm:E36.Visual Item-107")
+class O412 crm;
+O411 -- crm:P2.has type -->O412["crm:E36.Visual Item"]
+O387 -- crm:P138.has representation -->O411["_Blank Node-N76"]
+
+O413("Optional, additional images specifically representing the sample site.@en")
+class O413 literal;
+O411 -- rdfs:comment -->O413["Optional, additional images specifically representing the<br/>sample site.@en"]
+
+O414("_Blank Node-N77")
+class O414 thing;
+
+O415("crm:E31.Document-108")
+class O415 crm;
+O414 -- crm:P2.has type -->O415["crm:E31.Document"]
+
+O416("wd:Q1200750")
+class O416 type;
+click O416 "https://www.wikidata.org/wiki/Q1200750" "Tooltip"
+O414 -- crm:P2.has type -->O416["wd:Q1200750"]
+O387 -- crm:P70.is documented in -->O414["_Blank Node-N77"]
+
+O417("Actual textual description of the annotation location.@en")
+class O417 literal;
+O414 -- rdfs:comment -->O417["Actual textual description of the annotation location.@en"]
+O79 -- rdfs:label -->O100["place@en"]
+
+O418("calendar date@en")
+class O418 literal;
+O394 -- rdfs:label -->O418["calendar date@en"]
+
+O419("reason@en")
+class O419 literal;
+O390 -- rdfs:label -->O419["reason@en"]
+
+O420("Description@en")
+class O420 literal;
+O416 -- rdfs:label -->O420["Description@en"]
+O82 -- rdfs:label -->O101["annotations@en"]
+O88 -- rdfs:label -->O107["pixels@en"]
+O86 -- rdfs:label -->O105["X Dimension@en"]
+O91 -- rdfs:label -->O106["Y Dimension@en"]
+
+O421("Area of interest@en")
+class O421 literal;
+O72 -- rdfs:label -->O421["Area of interest@en"]
+
+O422("crm:E53.place-109")
+class O422 crm;
+O387 -- crm:P2.has type -->O422["crm:E53.place"]
+
+O423("Samples can then be fully defined like all generic objects@en")
+class O423 literal;
+O386 -- rdfs:comment -->O423["Samples can then be fully defined like all generic<br/>objects@en"]
+
+O424("crm:E22.Man-Made Object-110")
+class O424 crm;
+O386 -- crm:P2.has type -->O424["crm:E22.Man-Made Object"]
+
+O425("aat:300028875")
+class O425 type;
+click O425 "http://vocab.getty.edu/aat/300028875" "Tooltip"
+O386 -- crm:P2.has type -->O425["aat:300028875"]
+
+O426("samples@en")
+class O426 literal;
+O425 -- rdfs:label -->O426["samples@en"]
+
+O427("crm:E21.Person-111")
+class O427 crm;
+O8 -- crm:P2.has type -->O427["crm:E21.Person"]
+O8 -- crm:P2.has type -->O42["aat:300025820"]
+O8 -- rdfs:label -->O43["Example NG Staff Member@en"]
+O42 -- rdfs:label -->O44["conservation scientist@en"]
+
+O428("Data Set 1.0 PID")
+class O428 oPID;
+
+O429("crm:E73.Informational Object-112")
+class O429 crm;
+O428 -- crm:P2.has type -->O429["crm:E73.Informational Object"]
+
+O430("_Blank Node-N78")
+class O430 thing;
+
+O431("crm:E54.Dimension-113")
+class O431 crm;
+O430 -- crm:P2.has type -->O431["crm:E54.Dimension"]
+
+O432("wd:Q3331189")
+class O432 type;
+click O432 "https://www.wikidata.org/wiki/Q3331189" "Tooltip"
+O430 -- crm:P2.has type -->O432["wd:Q3331189"]
+O428 -- crm:P43.has dimension -->O430["_Blank Node-N78"]
+
+O433("1.0#xsd:float")
+class O433 literal;
+O430 -- crm:P90.has value -->O433["1.0#xsd:float"]
+
+O434("_Blank Node-N79")
+class O434 event;
+
+O435("crm:E81.Transformation-114")
+class O435 crm;
+O434 -- crm:P2.has type -->O435["crm:E81.Transformation"]
+
+O436("aat:300380461")
+class O436 type;
+click O436 "http://vocab.getty.edu/aat/300380461" "Tooltip"
+O434 -- crm:P2.has type -->O436["aat:300380461"]
+O434 -- crm:P124:transformed -->O428["Data Set 1.0 PID"]
+
+O437("ngi:M0003")
+class O437 oPID;
+O434 -- crm:P33.used specific technique -->O437["ngi:M0003"]
+
+O438("Data Set 2.0 PID")
+class O438 oPID;
+O434 -- crm:P123.resulted in -->O438["Data Set 2.0 PID"]
+
+O439("A whole series of transformations can be modelled as shown, allowing for various calibration, format changes/conversions, processes etc.@en")
+class O439 literal;
+O434 -- rdfs:comment -->O439["A whole series of transformations can be modelled as shown,<br/>allowing for various calibration, format<br/>changes/conversions, processes etc.@en"]
+
+O440("crm:E29.Design or Procedure-115")
+class O440 crm;
+O437 -- crm:P2.has type -->O440["crm:E29.Design or Procedure"]
+
+O441("Retention indices calibration@en")
+class O441 literal;
+O437 -- rdfs:label -->O441["Retention indices calibration@en"]
+
+O442("calibration@en")
+class O442 literal;
+O436 -- rdfs:label -->O442["calibration@en"]
+
+O443("crm:E73.Informational Object-116")
+class O443 crm;
+O438 -- crm:P2.has type -->O443["crm:E73.Informational Object"]
+
+O444("_Blank Node-N80")
+class O444 thing;
+
+O445("crm:E54.Dimension-117")
+class O445 crm;
+O444 -- crm:P2.has type -->O445["crm:E54.Dimension"]
+O444 -- crm:P2.has type -->O432["wd:Q3331189"]
+O438 -- crm:P43.has dimension -->O444["_Blank Node-N80"]
+
+O446("2.0#xsd:float")
+class O446 literal;
+O444 -- crm:P90.has value -->O446["2.0#xsd:float"]
+
+O447("version, edition, or translation@en")
+class O447 literal;
+O432 -- rdfs:label -->O447["version, edition, or translation@en"]
+;</div></div>
+            </div>
+        </div>
+        </div>
+        
+	
+  <script src="../js/mermaid.min.js"></script>
+  <script>mermaid.initialize({startOnLoad:true, flowchart: { 
+    curve: 'basis'
+  }});</script>  
+    </body>
+</html>
