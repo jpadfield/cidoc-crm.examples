@@ -209,7 +209,7 @@ function grouppage ($gds)//title, $comment, $group)
 					<td><h4>$tag ($count - triples)</h4></td>
 					<td style="text-align:right;white-space: nowrap;">
 						<div class="btn-group" role="group" aria-label="Basic example">
-						<a class="btn btn-outline-primary" href="models/d3_${nm}.html" role="button">D3 Model</a>
+						<!-- <a class="btn btn-outline-primary" href="models/d3_${nm}.html" role="button">D3 Model</a> -->
 						<a class="btn btn-outline-success" href="models/mermaid_${nm}.html" role="button">Mermaid Model</a>
 						</div
 					</td>
