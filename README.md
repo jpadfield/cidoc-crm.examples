@@ -3,7 +3,7 @@ Example diagrams showing how the CIDOC CRM (http://www.cidoc-crm.org/) can be us
 
 A visualisation of the mapping models can be seen via the GitHub pages associated with this repository see: https://jpadfield.github.io/cidoc-crm.examples/ - this presentation will be updated in line with the developments of the raw triples, but there may well be a lag depending on the number of changes and additions made.
 
-<table><tr><td><img src="https://github.com/jpadfield/cidoc-crm.examples/blob/master/docs/graphics/NG Example CRM Modelling.png" alt="Example Screenshot"></td></tr></table>
+<table><tr><td><a href="https://jpadfield.github.io/cidoc-crm.examples/"><img src="https://github.com/jpadfield/cidoc-crm.examples/blob/master/docs/graphics/NG Example CRM Modelling.png" alt="Example Screenshot"></a></td></tr></table>
 
 
 # Acknowledgement
