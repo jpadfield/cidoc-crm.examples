@@ -304,16 +304,15 @@ function buildExamplePages ()
 		
 		$dataset = $name;
 		$dataset_qs = "?dataset=$dataset";
-		
-		//echo getcwd() . "\n";
+				
 		read_config();
+		$config['jsonUrl'] = "d3_${name}.json";
 		$json = json_encode($config);
-		$html = D3_displayModel ($title, $dataset_qs, $json);
+		$html = D3_displayModel ($title, $dataset, $json);
 		$myfile = fopen("../docs/models/d3_${name}.html", "w");
 		fwrite($myfile, $html);
 		fclose($myfile);
-		
-		$config['jsonUrl'] = "d3_${name}.json";
+				
 		read_data();
 		$d3json = json_encode(array(
 			'data'   => $data,
@@ -321,27 +320,13 @@ function buildExamplePages ()
 	
 		$myfile = fopen("../docs/models/d3_${name}.json", "w");
 		fwrite($myfile, $d3json);
-		fclose($myfile);	
-		}
-		/*else if (isset($_GET["d3list"]))
-			{
-			require_once './d3-pmm/common.php';
-			read_data();
-			
-			D3_displayList ($title, $dataset_qs, $data);	
-			}
-		else
-			{
-			require_once './d3-pmm/common.php';
-			
-			read_config();
-			$json = json_encode($config);
-			
-			D3_displayModel ($title, $dataset_qs, $json);
-
-			}*/	
-		
-	
+		fclose($myfile);
+				
+		$html = D3_displayList ($title, $dataset, $data);
+		$myfile = fopen("../docs/models/d3_${name}_list.html", "w");
+		fwrite($myfile, $html);
+		fclose($myfile);
+		}	
 	
 	foreach ($groups as $name => $d)
 		{$pd = $gpd;		
@@ -925,8 +910,54 @@ function D3_processNode ($v, $dv, $prop=false)
 	
 	return ($output);		
 	}
-	
-function D3_displayModel ($title, $dataset_qs, $json)
+
+function D3_displayList ($title, $dataset, $data)
+	{
+	$dstr = "";
+	foreach ($data as $obj) {
+    $id = get_id_string($obj['name']);
+    $dstr .= "<div class=\"docs\" id=\"$id\">$obj[docs]</div>\n";
+		}
+
+	ob_start();
+	echo <<<END
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="utf-8">
+        <title>$title</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/print.css">
+    </head>
+    <body>
+				<a class="btn btn-default nav-button" id="nav-home" href="../">
+                Home
+            </a>            
+            <a class="btn btn-default nav-button" style="left:80px;" id="nav-models" href="../models.html">
+                Models
+            </a>
+            <a class="btn btn-default nav-button"  style="left:160px;"  id="nav-graph" href="d3_${dataset}.html">
+                View Graph
+            </a>
+        <div id="docs-list">
+					$dstr
+        </div>
+    </body>
+</html>
+
+END;
+	$html = ob_get_contents();
+	ob_end_clean(); // Don't send output to client	
+		 
+	return ($html);
+	}	
+		
+function D3_displayModel ($title, $dataset, $json)
 	{	
 	ob_start();
 	echo <<<END
@@ -977,13 +1008,13 @@ function D3_displayModel ($title, $dataset_qs, $json)
         <![endif]-->
         <div class="center-div">
         <div id="split-container">
-            <a class="btn btn-default nav-button" id="nav-home" href="./">
+            <a class="btn btn-default nav-button" id="nav-home" href="../">
                 Home
             </a>            
-            <a class="btn btn-default nav-button" style="left:80px;" id="nav-models" href="./?page=models">
+            <a class="btn btn-default nav-button" style="left:80px;" id="nav-models" href="../models.html">
                 Models
             </a>
-            <a class="btn btn-default nav-button"  style="left:160px;"  id="nav-list" href="${dataset_qs}&d3list=1">
+            <a class="btn btn-default nav-button"  style="left:160px;"  id="nav-list" href="d3_${dataset}_list.html">
                 View list
             </a>
             <div id="graph-container">
