@@ -9,6 +9,7 @@ $files = glob("../models/*/*-triples.csv");
 $data = array();
 foreach ($files as $f)
 	{$data = array_merge($data, file($f));}
+$errors = array();	
 
 $raw = getRaw($data);
 $fmods = array_keys($raw);
@@ -254,7 +255,7 @@ function buildTopNav ($name)
 	
 function buildExamplePages ()
 	{
-	global $pages, $groups, $raw, $fmods, $dataset, $dataset_qs, $config;
+	global $pages, $groups, $raw, $fmods, $dataset, $dataset_qs, $config, $data, $errors;
 	
 	$gpd = array(
     "extra_js_scripts" => array(),
@@ -310,8 +311,16 @@ function buildExamplePages ()
 		$html = D3_displayModel ($title, $dataset_qs, $json);
 		$myfile = fopen("../docs/models/d3_${name}.html", "w");
 		fwrite($myfile, $html);
-		fclose($myfile);	
+		fclose($myfile);
 		
+		read_data();
+		$d3json = json_encode(array(
+			'data'   => $data,
+			'errors' => $errors));
+	
+		$myfile = fopen("../docs/models/d3_${name}.json", "w");
+		fwrite($myfile, $d3json);
+		fclose($myfile);	
 		}
 		/*else if (isset($_GET["d3list"]))
 			{
@@ -400,7 +409,7 @@ END;
 		fclose($myfile);
 		}
 	}
-
+	
 
 function buildBootStrapNGPage ($pageDetails=array())
 	{	
