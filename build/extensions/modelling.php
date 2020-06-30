@@ -12,13 +12,6 @@ $old_files = glob($html_path."/models/*.html");
 foreach ($old_files as $ofile)
 	{unlink ($ofile);}
 
-$here = getcwd();
-echo $here . "\n";
-$lf = scandir($here."/../d3");
-print_r ($lf);
-$lf = scandir($here."/../d3/d3-process-map");
-print_r ($lf);
-
 if (is_file('../d3/common.php'))
   {require_once '../d3/common.php';}
 else
@@ -27,14 +20,6 @@ else
 function extensionModelling ($d, $pd)
   {
   global $raw, $extraHTML, $html_path, $config, $dataset, $dataset_qs, $data;
-
-  /// TMP ///////////////
-  //if ($d["file"] != array("sampling"))
-   // {return (array("d" => $d, "pd" => $pd));
-   //  exit;}
-  //else
- //   {prg(0, $d["file"]);}  
-  //////////////////////
   
   $files = array();
   foreach ($d["file"] as $t)
