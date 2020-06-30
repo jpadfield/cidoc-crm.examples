@@ -19,17 +19,19 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - name: cidoc-crm.examples
+      uses: actions/checkout@v2
+    
     - name: d3-process-map
       uses: actions/checkout@v2
       with:
         repository: jpadfield/d3-process-map
-        path: d3
-
-    - uses: actions/checkout@v2    
+        path: d3        
 
     # Runs commands using the runners shell
     - name: Run the build php script
       run: |
+        ls -l
         cd build
         php build.php  # This file reads a few json files and then creates a set of html files in the doc folder
         cd ../
