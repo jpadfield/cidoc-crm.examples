@@ -25,7 +25,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: jpadfield/d3-process-map
-    # path: my-tools
+    # path: my-tools NOT SURE IF THIS IS NEEDED
 
     # Runs commands using the runners shell
     - name: Run the build php script
