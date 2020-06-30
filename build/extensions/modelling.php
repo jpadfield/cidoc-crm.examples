@@ -14,11 +14,9 @@ foreach ($old_files as $ofile)
 
 $here = getcwd();
 echo $here . "\n";
-$lf = scandir($here."/..");
+$lf = scandir($here."/../d3");
 print_r ($lf);
-$lf = scandir($here."/../..");
-print_r ($lf);
-$lf = scandir($here."/../../..");
+$lf = scandir($here."/../d3/d3-process-map");
 print_r ($lf);
 
 // /home/runner/work/cidoc-crm.examples/cidoc-crm.examples/build/extensions/modelling.php
