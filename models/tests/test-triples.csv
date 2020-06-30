@@ -8,6 +8,7 @@ Name	content	Portret van Katherine Stieglitz
 Name	classified_as	object title
 Name	language	English
 HMO	identified_by	Identifier
+HMO	linked_to	More
 Identifier	content	RP-F-F17653
 Identifier	classified_as	accession
 Identifier	assigned_by	Attrib Assign
@@ -39,4 +40,3 @@ DimensionW	unit	mm
 DimensionW	type	width
 Image Part	part_of	HMO
 Image Part	dimension	DimensionX
-HMO lined_to Stuff
