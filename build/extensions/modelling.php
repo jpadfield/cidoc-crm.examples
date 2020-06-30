@@ -15,10 +15,10 @@ foreach ($old_files as $ofile)
 $here = getcwd();
 echo $here . "\n";
 $lf = scandir($here."/..");
-prg(0, $lf);
+print_r ($lf);
 $lf = scandir($here."/../..");
-prg(0, $lf);
-require_once '../../d3-process-map/common.php';
+print_r ($lf);
+require_once '../d3/d3-process-map/common.php';
 
 function extensionModelling ($d, $pd)
   {
