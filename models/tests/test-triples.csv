@@ -1,0 +1,41 @@
+////////////////////////////////////////////////////////////////////////
+// Model: test // Test modelling example
+// Stuff
+////////////////////////////////////////////////////////////////////////
+
+HMO	identified_by	Name
+Name	content	Portret van Katherine Stieglitz
+Name	classified_as	object title
+Name	language	English
+HMO	identified_by	Identifier
+Identifier	content	RP-F-F17653
+Identifier	classified_as	accession
+Identifier	assigned_by	Attrib Assign
+Attrib Assign	carried_out_by	Rijks
+HMO	classified_as	photograph
+back	part_of	HMO
+back	carries	Name
+HMO	produced_by	Production
+Production	carried_out_by	Annan
+Production	technique Printing
+HMO	shows	Visual Item
+Visual Item	content	Name
+Visual Item	????	Creation
+Creation	timespan	Timespan
+Creation	carried_out_by	Stieglitz
+Timespan	identifed_by	Name2
+Timespan	begin_of_the_begin	1905-01-01T00:00:00
+Timespan	end_of_the_end	1906-01-01T00:00:00
+Name2	content	1905
+Name2	classified_as	display name
+HMO	made_of	Paper
+HMO	dimension	DimensionH
+DimensionH	value	302
+DimensionH	unit	mm
+DimensionH	type	height
+HMO	dimension	DimensionW
+DimensionW	value	210
+DimensionW	unit	mm
+DimensionW	type	width
+Image Part	part_of	HMO
+Image Part	dimension	DimensionX
