@@ -23,7 +23,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: jpadfield/d3-process-map
-    # path: my-tools NOT SURE IF THIS IS NEEDED
+        path: d3
 
     - uses: actions/checkout@v2    
 
