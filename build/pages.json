@@ -67,7 +67,7 @@
 	"content": "<p>This example includes a combination of all of the other examples models provided here, showing how they connect together to form a larger knowledge network based on shared objects, people and events. This model is quite large and can be a bit harder to interpret.</p>"
 		},
 "Test Models": {
-	"title": "Simple test examples",
+	"title": "Simple Test Examples",
   "parent": "Linked Art Models",
   "class": "modelling",	
   "file": ["test"],
