@@ -19,10 +19,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - name: Local Repo
     - uses: actions/checkout@v2
 
-    - name: Include D3 tools
+    - name: d3-process-map
       uses: actions/checkout@v2
       with:
       repository: jpadfield/d3-process-map
