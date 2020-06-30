@@ -18,13 +18,14 @@ $lf = scandir($here."/..");
 print_r ($lf);
 $lf = scandir($here."/../..");
 print_r ($lf);
-$lf = scandir($here."/../..");
+$lf = scandir($here."/../../..");
 print_r ($lf);
 
+// /home/runner/work/cidoc-crm.examples/cidoc-crm.examples/build/extensions/modelling.php
 if (is_file('../d3/d3-process-map/common.php'))
   {require_once '../d3/d3-process-map/common.php';}
 else
-  {require_once '../../d3-process-map/common.php';}
+  {require_once '../../../d3-process-map/common.php';}
 
 function extensionModelling ($d, $pd)
   {
