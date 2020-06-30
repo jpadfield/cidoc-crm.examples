@@ -8,7 +8,7 @@
         <meta charset="utf-8">
         <title></title>
         
-        <link rel="stylesheet" href="../css/mermaid.css">
+        <!--- <link rel="stylesheet" href="../css/mermaid.css"> -->
     <style>			
 		
 body
@@ -69,10 +69,10 @@ g a
     <body>
     <div class="center-div">
         <div id="split-container">
-            <a class="btn btn-default nav-button" id="nav-home" href="../index.html">
+            <a class="btn btn-default nav-button" id="nav-home" href="../">
                 Home
             </a>            
-            <a class="btn btn-default nav-button" style="left:80px;" id="nav-models" href="../models.html">
+            <a class="btn btn-default nav-button" style="left:80px;" id="nav-models" href="../Measurements and Analysis.html">
                 Models
             </a>
             <div id="graph-container">
@@ -99,7 +99,7 @@ O1("crm:E73.Informational Object-0")
 class O1 crm;
 O0 -- crm:P2.has type -->O1["crm:E73.Informational Object"]
 
-O2("_Blank Node-N78")
+O2("_Blank Node-N21")
 class O2 thing;
 
 O3("crm:E54.Dimension-1")
@@ -110,13 +110,13 @@ O4("wd:Q3331189")
 class O4 type;
 click O4 "https://www.wikidata.org/wiki/Q3331189" "Tooltip"
 O2 -- crm:P2.has type -->O4["wd:Q3331189"]
-O0 -- crm:P43.has dimension -->O2["_Blank Node-N78"]
+O0 -- crm:P43.has dimension -->O2["_Blank Node-N21"]
 
 O5("1.0#xsd:float")
 class O5 literal;
 O2 -- crm:P90.has value -->O5["1.0#xsd:float"]
 
-O6("_Blank Node-N79")
+O6("_Blank Node-N22")
 class O6 event;
 
 O7("crm:E81.Transformation-2")
@@ -157,14 +157,14 @@ O15("crm:E73.Informational Object-4")
 class O15 crm;
 O10 -- crm:P2.has type -->O15["crm:E73.Informational Object"]
 
-O16("_Blank Node-N80")
+O16("_Blank Node-N23")
 class O16 thing;
 
 O17("crm:E54.Dimension-5")
 class O17 crm;
 O16 -- crm:P2.has type -->O17["crm:E54.Dimension"]
 O16 -- crm:P2.has type -->O4["wd:Q3331189"]
-O10 -- crm:P43.has dimension -->O16["_Blank Node-N80"]
+O10 -- crm:P43.has dimension -->O16["_Blank Node-N23"]
 
 O18("2.0#xsd:float")
 class O18 literal;
@@ -179,7 +179,7 @@ O4 -- rdfs:label -->O19["version, edition, or translation@en"]
         </div>
         
 	
-  <script src="../js/mermaid.min.js"></script>
+  <script src="https://unpkg.com/mermaid@8.5.2/dist/mermaid.min.js"></script>
   <script>mermaid.initialize({startOnLoad:true, flowchart: { 
     curve: 'basis'
   }});</script>  

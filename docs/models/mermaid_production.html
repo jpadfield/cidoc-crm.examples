@@ -8,7 +8,7 @@
         <meta charset="utf-8">
         <title></title>
         
-        <link rel="stylesheet" href="../css/mermaid.css">
+        <!--- <link rel="stylesheet" href="../css/mermaid.css"> -->
     <style>			
 		
 body
@@ -69,10 +69,10 @@ g a
     <body>
     <div class="center-div">
         <div id="split-container">
-            <a class="btn btn-default nav-button" id="nav-home" href="../index.html">
+            <a class="btn btn-default nav-button" id="nav-home" href="../">
                 Home
             </a>            
-            <a class="btn btn-default nav-button" style="left:80px;" id="nav-models" href="../models.html">
+            <a class="btn btn-default nav-button" style="left:80px;" id="nav-models" href="../Objects, Creators and Events.html">
                 Models
             </a>
             <div id="graph-container">
@@ -122,7 +122,7 @@ O6("crm:E22.Man-Made Object-1")
 class O6 crm;
 O5 -- crm:P2.has type -->O6["crm:E22.Man-Made Object"]
 
-O7("_Blank Node-N60")
+O7("_Blank Node-N9")
 class O7 thing;
 
 O8("crm:E53.Place-2")
@@ -133,13 +133,13 @@ O9("tgn:7000526")
 class O9 type;
 click O9 "http://vocab.getty.edu/tgn/7000526" "Tooltip"
 O7 -- owl:sameAs -->O9["tgn:7000526"]
-O0 -- crm:P7.took place at -->O7["_Blank Node-N60"]
+O0 -- crm:P7.took place at -->O7["_Blank Node-N9"]
 
 O10("Perugia (inhabited place)@en")
 class O10 literal;
 O9 -- rdf:label -->O10["Perugia (inhabited place)@en"]
 
-O11("_Blank Node-N61")
+O11("_Blank Node-N10")
 class O11 thing;
 
 O12("crm:E55.type-3")
@@ -150,25 +150,25 @@ O13("aat:300178684")
 class O13 type;
 click O13 "http://vocab.getty.edu/aat/300178684" "Tooltip"
 O11 -- crm:P2.has type -->O13["aat:300178684"]
-O0 -- crm:P32.used general technique -->O11["_Blank Node-N61"]
+O0 -- crm:P32.used general technique -->O11["_Blank Node-N10"]
 
 O14("oil painting (technique)@en")
 class O14 literal;
 O13 -- rdf:label -->O14["oil painting (technique)@en"]
 
-O15("_Blank Node-N62")
+O15("_Blank Node-N11")
 class O15 thing;
 
 O16("crm:E1.CRM Entity-4")
 class O16 crm;
 O15 -- crm:P2.has type -->O16["crm:E1.CRM Entity"]
-O0 -- rdfs:seeAlso -->O15["_Blank Node-N62"]
+O0 -- rdfs:seeAlso -->O15["_Blank Node-N11"]
 
 O17("Further connections could be made to other related objects, people or events.@en")
 class O17 literal;
 O15 -- rdfs:comment -->O17["Further connections could be made to other related objects,<br/>people or events.@en"]
 
-O18("_Blank Node-N63")
+O18("_Blank Node-N12")
 class O18 thing;
 
 O19("crm:E57.Material-5")
@@ -179,13 +179,13 @@ O20("aat:300015050")
 class O20 type;
 click O20 "http://vocab.getty.edu/aat/300015050" "Tooltip"
 O18 -- rdfs:sameAs -->O20["aat:300015050"]
-O0 -- crm:P126.employed -->O18["_Blank Node-N63"]
+O0 -- crm:P126.employed -->O18["_Blank Node-N12"]
 
 O21("oil paint (paint)@en")
 class O21 literal;
 O20 -- rdfs:label -->O21["oil paint (paint)@en"]
 
-O22("_Blank Node-N64")
+O22("_Blank Node-N13")
 class O22 thing;
 
 O23("crm:E74.Group-6")
@@ -196,7 +196,7 @@ O24("aat:300107304")
 class O24 type;
 click O24 "http://vocab.getty.edu/aat/300107304" "Tooltip"
 O22 -- rdfs:sameAs -->O24["aat:300107304"]
-O0 -- crm:P15.was influenced by -->O22["_Blank Node-N64"]
+O0 -- crm:P15.was influenced by -->O22["_Blank Node-N13"]
 
 O25("Ancient Italian@en")
 class O25 literal;
@@ -211,19 +211,19 @@ O27("crm:E21.Person-7")
 class O27 crm;
 O26 -- crm:P2.has type -->O27["crm:E21.Person"]
 
-O28("_Blank Node-N65")
+O28("_Blank Node-N14")
 class O28 thing;
 
 O29("crm:E31.Document-8")
 class O29 crm;
 O28 -- crm:P2.has type -->O29["crm:E31.Document"]
-O0 -- crm:P70.is documented in -->O28["_Blank Node-N65"]
+O0 -- crm:P70.is documented in -->O28["_Blank Node-N14"]
 
 O30("This allows additional links to stand-alone and/or legacy reports, publications, databases, etc.@en")
 class O30 literal;
 O28 -- note -->O30["This allows additional links to stand-alone and/or legacy<br/>reports, publications, databases, etc.@en"]
 
-O31("_Blank Node-N66")
+O31("_Blank Node-N15")
 class O31 thing;
 
 O32("crm:E31.Document-9")
@@ -243,9 +243,9 @@ O35("https://www.book-info.com/isbn/1-85709-999-0.htm")
 class O35 url;
 click O35 "https://www.book-info.com/isbn/1-85709-999-0.htm" "Tooltip"
 O31 -- rdfs:seeAlso -->O35["https://www.book-info.com/isbn/1-85709-999-0.htm"]
-O0 -- crm:P70.is documented in -->O31["_Blank Node-N66"]
+O0 -- crm:P70.is documented in -->O31["_Blank Node-N15"]
 
-O36("_Blank Node-N67")
+O36("_Blank Node-N16")
 class O36 thing;
 
 O37("crm:E52.Time-span-10")
@@ -273,7 +273,7 @@ O42("wd:Q6153")
 class O42 type;
 click O42 "https://www.wikidata.org/wiki/Q6153" "Tooltip"
 O36 -- owl:sameAs -->O42["wd:Q6153"]
-O0 -- crm:P4.has time span -->O36["_Blank Node-N67"]
+O0 -- crm:P4.has time span -->O36["_Blank Node-N16"]
 
 O43("years@en")
 class O43 literal;
@@ -284,7 +284,7 @@ O38 -- rdfs:label -->O43["years@en"]
         </div>
         
 	
-  <script src="../js/mermaid.min.js"></script>
+  <script src="https://unpkg.com/mermaid@8.5.2/dist/mermaid.min.js"></script>
   <script>mermaid.initialize({startOnLoad:true, flowchart: { 
     curve: 'basis'
   }});</script>  

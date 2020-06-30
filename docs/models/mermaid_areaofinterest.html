@@ -8,7 +8,7 @@
         <meta charset="utf-8">
         <title></title>
         
-        <link rel="stylesheet" href="../css/mermaid.css">
+        <!--- <link rel="stylesheet" href="../css/mermaid.css"> -->
     <style>			
 		
 body
@@ -69,10 +69,10 @@ g a
     <body>
     <div class="center-div">
         <div id="split-container">
-            <a class="btn btn-default nav-button" id="nav-home" href="../index.html">
+            <a class="btn btn-default nav-button" id="nav-home" href="../">
                 Home
             </a>            
-            <a class="btn btn-default nav-button" style="left:80px;" id="nav-models" href="../models.html">
+            <a class="btn btn-default nav-button" style="left:80px;" id="nav-models" href="../Areas of Interest.html">
                 Models
             </a>
             <div id="graph-container">
@@ -92,7 +92,7 @@ classDef classstyle stroke:black,fill:white;
 classDef url stroke:#2C5D98,fill:white,color:#2C5D98,rx:5px,ry:5px;
 classDef note stroke:#2C5D98,fill:#D8FDFF,color:#2C5D98,rx:5px,ry:5px;
 
-O0("_Blank Node-N12")
+O0("_Blank Node-N1")
 class O0 event;
 
 O1("crm:E9.Event-0")
@@ -134,13 +134,13 @@ O9("conservation scientist@en")
 class O9 literal;
 O7 -- rdfs:label -->O9["conservation scientist@en"]
 
-O10("_Blank Node-N13")
+O10("_Blank Node-N2")
 class O10 thing;
 
 O11("crm:E31.Document-2")
 class O11 crm;
 O10 -- crm:P2.has type -->O11["crm:E31.Document"]
-O0 -- crm:P70.is documented in -->O10["_Blank Node-N13"]
+O0 -- crm:P70.is documented in -->O10["_Blank Node-N2"]
 
 O12("This can include the reason and purpose of the Area of Interest, as ext, images, video, etc..@en")
 class O12 literal;
@@ -168,19 +168,19 @@ O17("Free text description of the Area of Interest@en")
 class O17 literal;
 O5 -- rdfs:comment -->O17["Free text description of the Area of Interest@en"]
 
-O18("_Blank Node-N14")
+O18("_Blank Node-N3")
 class O18 thing;
 
 O19("crm:E31.Document-5")
 class O19 crm;
 O18 -- crm:P2.has type -->O19["crm:E31.Document"]
-O5 -- crm:P70.is documented in -->O18["_Blank Node-N14"]
+O5 -- crm:P70.is documented in -->O18["_Blank Node-N3"]
 
 O20("This allows additional links to stand-alone and/or legacy reports, publications, databases, etc.@en")
 class O20 literal;
 O18 -- note -->O20["This allows additional links to stand-alone and/or legacy<br/>reports, publications, databases, etc.@en"]
 
-O21("_Blank Node-N15")
+O21("_Blank Node-N4")
 class O21 thing;
 
 O22("crm:E41.Appellation-6")
@@ -191,10 +191,10 @@ O23("aat:300248475")
 class O23 type;
 click O23 "http://vocab.getty.edu/aat/300248475" "Tooltip"
 O21 -- crm:P2.has type -->O23["aat:300248475"]
-O18 -- crm:P1.is identified by -->O21["_Blank Node-N15"]
-O5 -- crm:P1.is identified by -->O21["_Blank Node-N15"]
+O18 -- crm:P1.is identified by -->O21["_Blank Node-N4"]
+O5 -- crm:P1.is identified by -->O21["_Blank Node-N4"]
 
-O24("_Blank Node-N16")
+O24("_Blank Node-N5")
 class O24 thing;
 
 O25("crm:E31.Document-7")
@@ -205,13 +205,13 @@ O26("aat:300026100")
 class O26 type;
 click O26 "http://vocab.getty.edu/aat/300026100" "Tooltip"
 O24 -- crm:P2.has type -->O26["aat:300026100"]
-O21 -- crm:P70.is documented in -->O24["_Blank Node-N16"]
+O21 -- crm:P70.is documented in -->O24["_Blank Node-N5"]
 
 O27("Actual html content of the annotation@en")
 class O27 literal;
 O24 -- rdfs:comment -->O27["Actual html content of the annotation@en"]
 
-O28("_Blank Node-N17")
+O28("_Blank Node-N6")
 class O28 thing;
 
 O29("crm:E54.Dimension-8")
@@ -222,7 +222,7 @@ O30("ngo:00A-00DW-0000")
 class O30 oPID;
 click O30 "http://data.ng-london.org.uk/resource/00A-00DW-0000" "Tooltip"
 O28 -- crm:P2.has type -->O30["ngo:00A-00DW-0000"]
-O21 -- crm:P43.has dimension -->O28["_Blank Node-N17"]
+O21 -- crm:P43.has dimension -->O28["_Blank Node-N6"]
 
 O31("170#xsd:decimal")
 class O31 literal;
@@ -233,7 +233,7 @@ class O32 type;
 click O32 "http://vocab.getty.edu/aat/300266190" "Tooltip"
 O28 -- crm:P91.has unit -->O32["aat:300266190"]
 
-O33("_Blank Node-N18")
+O33("_Blank Node-N7")
 class O33 thing;
 
 O34("crm:E54.Dimension-9")
@@ -244,14 +244,14 @@ O35("ngo:00A-00DX-0000")
 class O35 oPID;
 click O35 "http://data.ng-london.org.uk/resource/00A-00DX-0000" "Tooltip"
 O33 -- crm:P2.has type -->O35["ngo:00A-00DX-0000"]
-O21 -- crm:P43.has dimension -->O33["_Blank Node-N18"]
+O21 -- crm:P43.has dimension -->O33["_Blank Node-N7"]
 
 O36("6239#xsd:decimal")
 class O36 literal;
 O33 -- crm:P90.has value -->O36["6239#xsd:decimal"]
 O33 -- crm:P91.has unit -->O32["aat:300266190"]
 
-O37("_Blank Node-N19")
+O37("_Blank Node-N8")
 class O37 thing;
 
 O38("crm:E54.Dimension-10")
@@ -262,14 +262,14 @@ O39("aat:300055647")
 class O39 type;
 click O39 "http://vocab.getty.edu/aat/300055647" "Tooltip"
 O37 -- crm:P2.has type -->O39["aat:300055647"]
-O21 -- crm:P43.has dimension -->O37["_Blank Node-N19"]
+O21 -- crm:P43.has dimension -->O37["_Blank Node-N8"]
 
 O40("200#xsd:decimal")
 class O40 literal;
 O37 -- crm:P90.has value -->O40["200#xsd:decimal"]
 O37 -- crm:P91.has unit -->O32["aat:300266190"]
 
-O41("_Blank Node-N20")
+O41("_Blank Node-N9")
 class O41 thing;
 
 O42("crm:E54.Dimension-11")
@@ -280,7 +280,7 @@ O43("aat:300055644")
 class O43 type;
 click O43 "http://vocab.getty.edu/aat/300055644" "Tooltip"
 O41 -- crm:P2.has type -->O43["aat:300055644"]
-O21 -- crm:P43.has dimension -->O41["_Blank Node-N20"]
+O21 -- crm:P43.has dimension -->O41["_Blank Node-N9"]
 O41 -- crm:P90.has value -->O40["200#xsd:decimal"]
 O41 -- crm:P91.has unit -->O32["aat:300266190"]
 
@@ -321,7 +321,7 @@ O32 -- rdfs:label -->O51["pixels@en"]
         </div>
         
 	
-  <script src="../js/mermaid.min.js"></script>
+  <script src="https://unpkg.com/mermaid@8.5.2/dist/mermaid.min.js"></script>
   <script>mermaid.initialize({startOnLoad:true, flowchart: { 
     curve: 'basis'
   }});</script>  

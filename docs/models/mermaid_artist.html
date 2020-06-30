@@ -8,7 +8,7 @@
         <meta charset="utf-8">
         <title></title>
         
-        <link rel="stylesheet" href="../css/mermaid.css">
+        <!--- <link rel="stylesheet" href="../css/mermaid.css"> -->
     <style>			
 		
 body
@@ -69,10 +69,10 @@ g a
     <body>
     <div class="center-div">
         <div id="split-container">
-            <a class="btn btn-default nav-button" id="nav-home" href="../index.html">
+            <a class="btn btn-default nav-button" id="nav-home" href="../">
                 Home
             </a>            
-            <a class="btn btn-default nav-button" style="left:80px;" id="nav-models" href="../models.html">
+            <a class="btn btn-default nav-button" style="left:80px;" id="nav-models" href="../Objects, Creators and Events.html">
                 Models
             </a>
             <div id="graph-container">
@@ -151,22 +151,22 @@ class O12 ePID;
 click O12 "http://data.ng-london.org.uk/resource/002-0432-0000" "Tooltip"
 O0 -- crm:P14.performed -->O12["ngo:002-0432-0000"]
 
-O13("_Blank Node-N21")
+O13("_Blank Node-N17")
 class O13 thing;
 
 O14("crm:E41.Appellation-1")
 class O14 crm;
 O13 -- crm:P2.has type -->O14["crm:E41.Appellation"]
-O0 -- crm:P131.is identified by -->O13["_Blank Node-N21"]
+O0 -- crm:P131.is identified by -->O13["_Blank Node-N17"]
 O13 -- rdfs:label -->O7["Raphael@en"]
 
-O15("_Blank Node-N22")
+O15("_Blank Node-N18")
 class O15 aPID;
 
 O16("crm:E74.Group-2")
 class O16 crm;
 O15 -- crm:P2.has type -->O16["crm:E74.Group"]
-O0 -- crm:P15.was influenced by -->O15["_Blank Node-N22"]
+O0 -- crm:P15.was influenced by -->O15["_Blank Node-N18"]
 
 O17("aat:300107304")
 class O17 type;
@@ -177,21 +177,21 @@ O18("Ancient Italian@en")
 class O18 literal;
 O17 -- rdfs:label -->O18["Ancient Italian@en"]
 
-O19("_Blank Node-N23")
+O19("_Blank Node-N19")
 class O19 event;
 
 O20("crm:E67 Birth-3")
 class O20 crm;
 O19 -- crm:P2.has type -->O20["crm:E67 Birth"]
-O0 -- crm:P98.was born -->O19["_Blank Node-N23"]
+O0 -- crm:P98.was born -->O19["_Blank Node-N19"]
 
-O21("_Blank Node-N24")
+O21("_Blank Node-N20")
 class O21 thing;
 
 O22("crm:E53 Place-4")
 class O22 crm;
 O21 -- crm:P2.has type -->O22["crm:E53 Place"]
-O19 -- crm:P7.took place at -->O21["_Blank Node-N24"]
+O19 -- crm:P7.took place at -->O21["_Blank Node-N20"]
 
 O23("tgn:7003994")
 class O23 type;
@@ -207,7 +207,7 @@ O25("Urbino (inhabited place)@en")
 class O25 literal;
 O23 -- rdfs:label -->O25["Urbino (inhabited place)@en"]
 
-O26("_Blank Node-N25")
+O26("_Blank Node-N21")
 class O26 thing;
 
 O27("crm:E52.Time-span-5")
@@ -222,7 +222,7 @@ O26 -- crm:P2.has type -->O28["aat:300379244"]
 O29("years@en")
 class O29 literal;
 O28 -- rdfs:label -->O29["years@en"]
-O19 -- crm:P4.has timespan -->O26["_Blank Node-N25"]
+O19 -- crm:P4.has timespan -->O26["_Blank Node-N21"]
 
 O30("1483-01-01 #xsd:dateTime")
 class O30 literal;
@@ -241,21 +241,21 @@ class O33 type;
 click O33 "https://www.wikidata.org/wiki/Q6637" "Tooltip"
 O26 -- owl:sameAs -->O33["wd:Q6637"]
 
-O34("_Blank Node-N26")
+O34("_Blank Node-N22")
 class O34 event;
 
 O35("crm:E69 Death-6")
 class O35 crm;
 O34 -- crm:P2.has type -->O35["crm:E69 Death"]
-O0 -- crm:P100.died in -->O34["_Blank Node-N26"]
+O0 -- crm:P100.died in -->O34["_Blank Node-N22"]
 
-O36("_Blank Node-N27")
+O36("_Blank Node-N23")
 class O36 thing;
 
 O37("crm:E53 Place-7")
 class O37 crm;
 O36 -- crm:P2.has type -->O37["crm:E53 Place"]
-O34 -- crm:P7.took place at -->O36["_Blank Node-N27"]
+O34 -- crm:P7.took place at -->O36["_Blank Node-N23"]
 
 O38("tgn:7000874")
 class O38 type;
@@ -271,14 +271,14 @@ O40("Rome (inhabited place)@en")
 class O40 literal;
 O38 -- rdfs:label -->O40["Rome (inhabited place)@en"]
 
-O41("_Blank Node-N28")
+O41("_Blank Node-N24")
 class O41 thing;
 
 O42("crm:E52.Time-span-8")
 class O42 crm;
 O41 -- crm:P2.has type -->O42["crm:E52.Time-span"]
 O41 -- crm:P2.has type -->O28["aat:300379244"]
-O34 -- crm:P4.has timespan -->O41["_Blank Node-N28"]
+O34 -- crm:P4.has timespan -->O41["_Blank Node-N24"]
 
 O43("1520-01-01 #xsd:dateTime")
 class O43 literal;
@@ -297,13 +297,13 @@ class O46 type;
 click O46 "https://www.wikidata.org/wiki/Q6284" "Tooltip"
 O41 -- owl:sameAs -->O46["wd:Q6284"]
 
-O47("_Blank Node-N29")
+O47("_Blank Node-N25")
 class O47 thing;
 
 O48("crm:E31 Document-9")
 class O48 crm;
 O47 -- crm:P2.has type -->O48["crm:E31 Document"]
-O0 -- crm:P70.is documented in -->O47["_Blank Node-N29"]
+O0 -- crm:P70.is documented in -->O47["_Blank Node-N25"]
 
 O49("https://cima.ng-london.org.uk/documentation/files/2009/10/01/Raphael%20Catalogue%20Complete.pdf")
 class O49 url;
@@ -324,7 +324,7 @@ O47 -- rdfs:label -->O51["Raphael: From Urbino to Rome@en"]
         </div>
         
 	
-  <script src="../js/mermaid.min.js"></script>
+  <script src="https://unpkg.com/mermaid@8.5.2/dist/mermaid.min.js"></script>
   <script>mermaid.initialize({startOnLoad:true, flowchart: { 
     curve: 'basis'
   }});</script>  

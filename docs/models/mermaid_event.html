@@ -8,7 +8,7 @@
         <meta charset="utf-8">
         <title></title>
         
-        <link rel="stylesheet" href="../css/mermaid.css">
+        <!--- <link rel="stylesheet" href="../css/mermaid.css"> -->
     <style>			
 		
 body
@@ -69,10 +69,10 @@ g a
     <body>
     <div class="center-div">
         <div id="split-container">
-            <a class="btn btn-default nav-button" id="nav-home" href="../index.html">
+            <a class="btn btn-default nav-button" id="nav-home" href="../">
                 Home
             </a>            
-            <a class="btn btn-default nav-button" style="left:80px;" id="nav-models" href="../models.html">
+            <a class="btn btn-default nav-button" style="left:80px;" id="nav-models" href="../Objects, Creators and Events.html">
                 Models
             </a>
             <div id="graph-container">
@@ -92,7 +92,7 @@ classDef classstyle stroke:black,fill:white;
 classDef url stroke:#2C5D98,fill:white,color:#2C5D98,rx:5px,ry:5px;
 classDef note stroke:#2C5D98,fill:#D8FDFF,color:#2C5D98,rx:5px,ry:5px;
 
-O0("_Blank Node-N37")
+O0("_Blank Node-N26")
 class O0 event;
 
 O1("crm:E9.Event-0")
@@ -141,51 +141,51 @@ O11("Different events will have individual descriptions and different types of e
 class O11 literal;
 O0 -- rdfs:comment -->O11["Different events will have individual descriptions and<br/>different types of events will have different additional<br/>relationships or links to external resources@en"]
 
-O12("_Blank Node-N38")
+O12("_Blank Node-N27")
 class O12 aPID;
 
 O13("crm:E39.Actor-5")
 class O13 crm;
 O12 -- crm:P2.has type -->O13["crm:E39.Actor"]
-O0 -- crm.P14.carried out by -->O12["_Blank Node-N38"]
-O0 -- crm.P12.occured in the presence of -->O12["_Blank Node-N38"]
-O0 -- crm.P15.was influenced by -->O12["_Blank Node-N38"]
+O0 -- crm.P14.carried out by -->O12["_Blank Node-N27"]
+O0 -- crm.P12.occured in the presence of -->O12["_Blank Node-N27"]
+O0 -- crm.P15.was influenced by -->O12["_Blank Node-N27"]
 
 O14("An event in the life of an object can involve a range of people or groups in different roles@en")
 class O14 literal;
 O12 -- rdfs:comment -->O14["An event in the life of an object can involve a range of<br/>people or groups in different roles@en"]
 
-O15("_Blank Node-N39")
+O15("_Blank Node-N28")
 class O15 thing;
 
 O16("crm:E31.Document-6")
 class O16 crm;
 O15 -- crm:P2.has type -->O16["crm:E31.Document"]
-O0 -- crm.P70.is documented in -->O15["_Blank Node-N39"]
+O0 -- crm.P70.is documented in -->O15["_Blank Node-N28"]
 
 O17("This allows a link to stand-alone and/or legacy reports, publications, databases, etc.@en")
 class O17 literal;
 O15 -- rdfs:comment -->O17["This allows a link to stand-alone and/or legacy reports,<br/>publications, databases, etc.@en"]
 
-O18("_Blank Node-N40")
+O18("_Blank Node-N29")
 class O18 thing;
 
 O19("crm:E1.CRM Entity-7")
 class O19 crm;
 O18 -- crm:P2.has type -->O19["crm:E1.CRM Entity"]
-O0 -- rdfs:seeAlso -->O18["_Blank Node-N40"]
+O0 -- rdfs:seeAlso -->O18["_Blank Node-N29"]
 
 O20("Different events can link to various other things.@en")
 class O20 literal;
 O18 -- rdfs:comment -->O20["Different events can link to various other things.@en"]
 
-O21("_Blank Node-N41")
+O21("_Blank Node-N30")
 class O21 thing;
 
 O22("crm:E52.Time-span-8")
 class O22 crm;
 O21 -- crm:P2.has type -->O22["crm:E52.Time-span"]
-O0 -- crm:P4.has time span -->O21["_Blank Node-N41"]
+O0 -- crm:P4.has time span -->O21["_Blank Node-N30"]
 
 O23("Time spans can be any period of time, with a start and a finish date Degrees of confidence also need to be established.@en")
 class O23 literal;
@@ -196,7 +196,7 @@ O21 -- rdfs:comment -->O23["Time spans can be any period of time, with a start a
         </div>
         
 	
-  <script src="../js/mermaid.min.js"></script>
+  <script src="https://unpkg.com/mermaid@8.5.2/dist/mermaid.min.js"></script>
   <script>mermaid.initialize({startOnLoad:true, flowchart: { 
     curve: 'basis'
   }});</script>  

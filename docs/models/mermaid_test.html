@@ -72,7 +72,7 @@ g a
             <a class="btn btn-default nav-button" id="nav-home" href="../">
                 Home
             </a>            
-            <a class="btn btn-default nav-button" style="left:80px;" id="nav-models" href="../Measurements and Analysis.html">
+            <a class="btn btn-default nav-button" style="left:80px;" id="nav-models" href="../Test Models.html">
                 Models
             </a>
             <div id="graph-container">
@@ -92,86 +92,139 @@ classDef classstyle stroke:black,fill:white;
 classDef url stroke:#2C5D98,fill:white,color:#2C5D98,rx:5px,ry:5px;
 classDef note stroke:#2C5D98,fill:#D8FDFF,color:#2C5D98,rx:5px,ry:5px;
 
-O0("_Blank Node-N12")
-class O0 event;
+O0("HMO")
+class O0 literal;
 
-O1("crm:E16.Measurement-0")
-class O1 crm;
-O0 -- crm:P2.has type -->O1["crm:E16.Measurement"]
+O1("Name")
+class O1 literal;
+O0 -- identified_by -->O1["Name"]
 
-O2("aat:300053578")
-class O2 type;
-click O2 "http://vocab.getty.edu/aat/300053578" "Tooltip"
-O0 -- crm:P2.has type -->O2["aat:300053578"]
+O2("Portret van Katherine Stieglitz")
+class O2 literal;
+O1 -- content -->O2["Portret van Katherine Stieglitz"]
 
-O3("aat:300204852")
-class O3 type;
-click O3 "http://vocab.getty.edu/aat/300204852" "Tooltip"
-O0 -- crm:P16.used specific object -->O3["aat:300204852"]
+O3("object title")
+class O3 literal;
+O1 -- classified_as -->O3["object title"]
 
-O4("ngi:M0002")
-class O4 oPID;
-O0 -- crm:P33.used specific technique -->O4["ngi:M0002"]
+O4("English")
+class O4 literal;
+O1 -- language -->O4["English"]
 
-O5("wd:Q3485549")
-class O5 type;
-click O5 "https://www.wikidata.org/wiki/Q3485549" "Tooltip"
-O0 -- crm:P32.used general technique -->O5["wd:Q3485549"]
+O5("Identifier")
+class O5 literal;
+O0 -- identified_by -->O5["Identifier"]
 
-O6("_Blank Node-N13")
-class O6 thing;
+O6("RP-F-F17653")
+class O6 literal;
+O5 -- content -->O6["RP-F-F17653"]
 
-O7("crm:E54.Dimension-1")
-class O7 crm;
-O6 -- crm:P2.has type -->O7["crm:E54.Dimension"]
+O7("accession")
+class O7 literal;
+O5 -- classified_as -->O7["accession"]
 
-O8("aat:300055647")
-class O8 type;
-click O8 "http://vocab.getty.edu/aat/300055647" "Tooltip"
-O6 -- crm:P2.has type -->O8["aat:300055647"]
-O0 -- crm:P40.observed dimension -->O6["_Blank Node-N13"]
+O8("Attrib Assign")
+class O8 literal;
+O5 -- assigned_by -->O8["Attrib Assign"]
 
-O9("ng:0FJS-0001-0000-0000")
-class O9 oPID;
-click O9 "http://data.ng-london.org.uk/0FJS-0001-0000-0000" "Tooltip"
-O9 -- crm:P43.has dimension -->O6["_Blank Node-N13"]
+O9("Rijks")
+class O9 literal;
+O8 -- carried_out_by -->O9["Rijks"]
 
-O10("216.8#xsd:float")
+O10("photograph")
 class O10 literal;
-O6 -- crm:P90.has value -->O10["216.8#xsd:float"]
+O0 -- classified_as -->O10["photograph"]
 
-O11("aat:300379098")
-class O11 type;
-click O11 "http://vocab.getty.edu/aat/300379098" "Tooltip"
-O6 -- crm:P91.has unit -->O11["aat:300379098"]
+O11("back")
+class O11 literal;
+O11 -- part_of -->O0["HMO"]
+O11 -- carries -->O1["Name"]
 
-O12("NG Painting measurement method@en")
+O12("Production")
 class O12 literal;
-O4 -- rdfs:label -->O12["NG Painting measurement method@en"]
+O0 -- produced_by -->O12["Production"]
 
-O13("crm:E29.Design or Procedure-2")
-class O13 crm;
-O4 -- crm:P2.has type -->O13["crm:E29.Design or Procedure"]
+O13("Annan")
+class O13 literal;
+O12 -- carried_out_by -->O13["Annan"]
 
-O14("manual work@en")
+O14("Visual Item")
 class O14 literal;
-O5 -- rdfs:label -->O14["manual work@en"]
+O0 -- shows -->O14["Visual Item"]
+O14 -- content -->O1["Name"]
 
-O15("tape measure@en")
+O15("Creation")
 class O15 literal;
-O3 -- rdfs:label -->O15["tape measure@en"]
+O14 -- ???? -->O15["Creation"]
 
-O16("measuring@en")
+O16("Timespan")
 class O16 literal;
-O2 -- rdfs:label -->O16["measuring@en"]
+O15 -- timespan -->O16["Timespan"]
 
-O17("width@en")
+O17("Stieglitz")
 class O17 literal;
-O8 -- rdfs:label -->O17["width@en"]
+O15 -- carried_out_by -->O17["Stieglitz"]
 
-O18("centimeters@en")
+O18("Name2")
 class O18 literal;
-O11 -- rdfs:label -->O18["centimeters@en"]
+O16 -- identifed_by -->O18["Name2"]
+
+O19("1905-01-01T00:00:00")
+class O19 literal;
+O16 -- begin_of_the_begin -->O19["1905-01-01T00:00:00"]
+
+O20("1906-01-01T00:00:00")
+class O20 literal;
+O16 -- end_of_the_end -->O20["1906-01-01T00:00:00"]
+
+O21("1905")
+class O21 literal;
+O18 -- content -->O21["1905"]
+
+O22("display name")
+class O22 literal;
+O18 -- classified_as -->O22["display name"]
+
+O23("Paper")
+class O23 literal;
+O0 -- made_of -->O23["Paper"]
+
+O24("DimensionH")
+class O24 literal;
+O0 -- dimension -->O24["DimensionH"]
+
+O25("302")
+class O25 literal;
+O24 -- value -->O25["302"]
+
+O26("mm")
+class O26 literal;
+O24 -- unit -->O26["mm"]
+
+O27("height")
+class O27 literal;
+O24 -- type -->O27["height"]
+
+O28("DimensionW")
+class O28 literal;
+O0 -- dimension -->O28["DimensionW"]
+
+O29("210")
+class O29 literal;
+O28 -- value -->O29["210"]
+O28 -- unit -->O26["mm"]
+
+O30("width")
+class O30 literal;
+O28 -- type -->O30["width"]
+
+O31("Image Part")
+class O31 literal;
+O31 -- part_of -->O0["HMO"]
+
+O32("DimensionX")
+class O32 literal;
+O31 -- dimension -->O32["DimensionX"]
 ;</div></div>
             </div>
         </div>
