@@ -12,6 +12,12 @@ $old_files = glob($html_path."/models/*.html");
 foreach ($old_files as $ofile)
 	{unlink ($ofile);}
 
+$here = getcwd();
+echo $here . "\n";
+$lf = scandir($here."/..");
+prg(0, $lf);
+$lf = scandir($here."/../..");
+prg(0, $lf);
 require_once '../../d3-process-map/common.php';
 
 function extensionModelling ($d, $pd)
