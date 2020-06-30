@@ -39,3 +39,4 @@ DimensionW	unit	mm
 DimensionW	type	width
 Image Part	part_of	HMO
 Image Part	dimension	DimensionX
+HMO lined_to Stuff
