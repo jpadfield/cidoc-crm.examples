@@ -115,120 +115,116 @@ O5("Identifier")
 class O5 literal;
 O0 -- identified_by -->O5["Identifier"]
 
-O6("More")
+O6("RP-F-F17653")
 class O6 literal;
-O0 -- linked_to -->O6["More"]
+O5 -- content -->O6["RP-F-F17653"]
 
-O7("RP-F-F17653")
+O7("accession")
 class O7 literal;
-O5 -- content -->O7["RP-F-F17653"]
+O5 -- classified_as -->O7["accession"]
 
-O8("accession")
+O8("Attrib Assign")
 class O8 literal;
-O5 -- classified_as -->O8["accession"]
+O5 -- assigned_by -->O8["Attrib Assign"]
 
-O9("Attrib Assign")
+O9("Rijks")
 class O9 literal;
-O5 -- assigned_by -->O9["Attrib Assign"]
+O8 -- carried_out_by -->O9["Rijks"]
 
-O10("Rijks")
+O10("photograph")
 class O10 literal;
-O9 -- carried_out_by -->O10["Rijks"]
+O0 -- classified_as -->O10["photograph"]
 
-O11("photograph")
+O11("back")
 class O11 literal;
-O0 -- classified_as -->O11["photograph"]
+O11 -- part_of -->O0["HMO"]
+O11 -- carries -->O1["Name"]
 
-O12("back")
+O12("Production")
 class O12 literal;
-O12 -- part_of -->O0["HMO"]
-O12 -- carries -->O1["Name"]
+O0 -- produced_by -->O12["Production"]
 
-O13("Production")
+O13("Annan")
 class O13 literal;
-O0 -- produced_by -->O13["Production"]
+O12 -- carried_out_by -->O13["Annan"]
 
-O14("Annan")
+O14("Visual Item")
 class O14 literal;
-O13 -- carried_out_by -->O14["Annan"]
+O0 -- shows -->O14["Visual Item"]
+O14 -- content -->O1["Name"]
 
-O15("Visual Item")
+O15("Creation")
 class O15 literal;
-O0 -- shows -->O15["Visual Item"]
-O15 -- content -->O1["Name"]
+O14 -- ???? -->O15["Creation"]
 
-O16("Creation")
+O16("Timespan")
 class O16 literal;
-O15 -- ???? -->O16["Creation"]
+O15 -- timespan -->O16["Timespan"]
 
-O17("Timespan")
+O17("Stieglitz")
 class O17 literal;
-O16 -- timespan -->O17["Timespan"]
+O15 -- carried_out_by -->O17["Stieglitz"]
 
-O18("Stieglitz")
+O18("Name2")
 class O18 literal;
-O16 -- carried_out_by -->O18["Stieglitz"]
+O16 -- identifed_by -->O18["Name2"]
 
-O19("Name2")
+O19("1905-01-01T00:00:00")
 class O19 literal;
-O17 -- identifed_by -->O19["Name2"]
+O16 -- begin_of_the_begin -->O19["1905-01-01T00:00:00"]
 
-O20("1905-01-01T00:00:00")
+O20("1906-01-01T00:00:00")
 class O20 literal;
-O17 -- begin_of_the_begin -->O20["1905-01-01T00:00:00"]
+O16 -- end_of_the_end -->O20["1906-01-01T00:00:00"]
 
-O21("1906-01-01T00:00:00")
+O21("1905")
 class O21 literal;
-O17 -- end_of_the_end -->O21["1906-01-01T00:00:00"]
+O18 -- content -->O21["1905"]
 
-O22("1905")
+O22("display name")
 class O22 literal;
-O19 -- content -->O22["1905"]
+O18 -- classified_as -->O22["display name"]
 
-O23("display name")
+O23("Paper")
 class O23 literal;
-O19 -- classified_as -->O23["display name"]
+O0 -- made_of -->O23["Paper"]
 
-O24("Paper")
+O24("DimensionH")
 class O24 literal;
-O0 -- made_of -->O24["Paper"]
+O0 -- dimension -->O24["DimensionH"]
 
-O25("DimensionH")
+O25("302")
 class O25 literal;
-O0 -- dimension -->O25["DimensionH"]
+O24 -- value -->O25["302"]
 
-O26("302")
+O26("mm")
 class O26 literal;
-O25 -- value -->O26["302"]
+O24 -- unit -->O26["mm"]
 
-O27("mm")
+O27("height")
 class O27 literal;
-O25 -- unit -->O27["mm"]
+O24 -- type -->O27["height"]
 
-O28("height")
+O28("DimensionW")
 class O28 literal;
-O25 -- type -->O28["height"]
+O0 -- dimension -->O28["DimensionW"]
 
-O29("DimensionW")
+O29("210")
 class O29 literal;
-O0 -- dimension -->O29["DimensionW"]
+O28 -- value -->O29["210"]
+O28 -- unit -->O26["mm"]
 
-O30("210")
+O30("width")
 class O30 literal;
-O29 -- value -->O30["210"]
-O29 -- unit -->O27["mm"]
+O28 -- type -->O30["width"]
 
-O31("width")
+O31("Image Part")
 class O31 literal;
-O29 -- type -->O31["width"]
+O31 -- part_of -->O0["HMO"]
 
-O32("Image Part")
+O32("DimensionX")
 class O32 literal;
-O32 -- part_of -->O0["HMO"]
-
-O33("DimensionX")
-class O33 literal;
-O32 -- dimension -->O33["DimensionX"]
+O31 -- dimension -->O32["DimensionX"]
 ;</div></div>
             </div>
         </div>
