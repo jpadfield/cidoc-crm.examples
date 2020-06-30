@@ -19,13 +19,13 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
-
     - name: d3-process-map
       uses: actions/checkout@v2
       with:
         repository: jpadfield/d3-process-map
     # path: my-tools NOT SURE IF THIS IS NEEDED
+
+    - uses: actions/checkout@v2    
 
     # Runs commands using the runners shell
     - name: Run the build php script
