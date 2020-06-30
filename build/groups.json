@@ -28,5 +28,10 @@
 		"title": "Full knowledge graph",
 		"models": ["all"],
 		"comment": "<p>This example includes a combination of all of the other examples models provided here, showing how they connect together to form a larger knowledge network based on shared objects, people and events. This model is quite large and can be a bit harder to interpret.</p>"
+		},
+	"g7": {
+		"title": "Tests",
+		"models": ["test"],
+		"comment": "<p>This example includes a combination of all of the other examples models provided here, showing how they connect together to form a larger knowledge network based on shared objects, people and events. This model is quite large and can be a bit harder to interpret.</p>"
 		}
 }
