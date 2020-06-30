@@ -18,7 +18,13 @@ $lf = scandir($here."/..");
 print_r ($lf);
 $lf = scandir($here."/../..");
 print_r ($lf);
-require_once '../d3/d3-process-map/common.php';
+$lf = scandir($here."/../..");
+print_r ($lf);
+
+if (is_file('../d3/d3-process-map/common.php'))
+  {require_once '../d3/d3-process-map/common.php';}
+else
+  {require_once '../../d3-process-map/common.php';}
 
 function extensionModelling ($d, $pd)
   {
