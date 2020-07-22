@@ -2,31 +2,31 @@
 // Model: artist // Primary relationships describing an Artist
 // D8.5 Figure 4
 ////////////////////////////////////////////////////////////////////////
-ng:0F6J-0001-0000-0000	crm:P2.has type	crm:E21.Person	aPID@@crm
-ng:0F6J-0001-0000-0000	crm:P2.has type	aat:300411314
+ng:0QCD-0001-0000-0000	crm:P2.has type	crm:E21.Person	aPID@@crm
+ng:0QCD-0001-0000-0000	crm:P2.has type	aat:300411314
 aat:300411314	rdfs:label	artist painters@en
-ng:0F6J-0001-0000-0000	crm:P2.has type	aat:300024987
+ng:0QCD-0001-0000-0000	crm:P2.has type	aat:300024987
 aat:300024987	rdfs:label	architechts@en
-ng:0F6J-0001-0000-0000	owl:sameAs	ulan:500023578
+ng:0QCD-0001-0000-0000	owl:sameAs	ulan:500023578
 ulan:500023578	rdfs:label	Raphael@en
-ng:0F6J-0001-0000-0000	owl:sameAs	wd:Q5597
+ng:0QCD-0001-0000-0000	owl:sameAs	wd:Q5597
 wd:Q5597	rdfs:label	Raphael@en
-ng:0F6J-0001-0000-0000	rdfs:seeAlso	https://cima.ng-london.org.uk/documentation
+ng:0QCD-0001-0000-0000	rdfs:seeAlso	https://cima.ng-london.org.uk/documentation
 https://cima.ng-london.org.uk/documentation	rdfs:label	Raphael Research Resource@en
-ng:0F6J-0001-0000-0000	rdfs:comment	Free Text@en
-ng:0F6J-0001-0000-0000	crm:P14.performed	ngo:002-0432-0000	aPID@@ePID
+ng:0QCD-0001-0000-0000	rdfs:comment	Free Text@en
+ng:0QCD-0001-0000-0000	crm:P14.performed	ngo:002-0432-0000	aPID@@ePID
 
 _Blank Node	crm:P2.has type	crm:E41.Appellation
-ng:0F6J-0001-0000-0000	crm:P131.is identified by	_Blank Node
+ng:0QCD-0001-0000-0000	crm:P131.is identified by	_Blank Node
 _Blank Node	rdfs:label	Raphael@en
 
 _Blank Node	crm:P2.has type	crm:E74.Group	aPID@@crm
-ng:0F6J-0001-0000-0000	crm:P15.was influenced by	_Blank Node
+ng:0QCD-0001-0000-0000	crm:P15.was influenced by	_Blank Node
 _Blank Node	owl:sameAs	aat:300107304
 aat:300107304	rdfs:label	Ancient Italian@en
 
 _Blank Node	crm:P2.has type	crm:E67 Birth	event@@crm
-ng:0F6J-0001-0000-0000	crm:P98.was born	_Blank Node
+ng:0QCD-0001-0000-0000	crm:P98.was born	_Blank Node
 
 _Blank Node	crm:P2.has type	crm:E53 Place
 _Blank Node-1	crm:P7.took place at	_Blank Node
@@ -44,7 +44,7 @@ _Blank Node	rdfs:label	1483@en
 _Blank Node	owl:sameAs	wd:Q6637
 
 _Blank Node	crm:P2.has type	crm:E69 Death	event@@crm
-ng:0F6J-0001-0000-0000	crm:P100.died in	_Blank Node
+ng:0QCD-0001-0000-0000	crm:P100.died in	_Blank Node
 
 _Blank Node	crm:P2.has type	crm:E53 Place
 _Blank Node-1	crm:P7.took place at	_Blank Node
@@ -61,7 +61,7 @@ _Blank Node	rdfs:label	1520@en
 _Blank Node	owl:sameAs	wd:Q6284
 
 _Blank Node	crm:P2.has type	crm:E31 Document
-ng:0F6J-0001-0000-0000	crm:P70.is documented in	_Blank Node
+ng:0QCD-0001-0000-0000	crm:P70.is documented in	_Blank Node
 _Blank Node	owl:sameAs	https://cima.ng-london.org.uk/documentation/files/2009/10/01/Raphael%20Catalogue%20Complete.pdf
 _Blank Node	rdfs:seeAlso	https://www.book-info.com/isbn/1-85709-999-0.htm
 _Blank Node	rdfs:label	Raphael: From Urbino to Rome@en
